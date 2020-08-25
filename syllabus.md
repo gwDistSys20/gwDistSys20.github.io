@@ -4,7 +4,7 @@ title: Syllabus
 permalink: /syllabus/
 ---
 
-**Instructors:** Prof. Tim Wood and Prof. Roozbeh Haghnazar
+**Instructors:** [Prof. Tim Wood](mailto:timwood@gwu.edu) and [Prof. Roozbeh Haghnazar](mailto:roozbeh@gwu.edu)
 
 **Time/Place:**
   * **Class meets Thursdays 6:10-8:40PM online**

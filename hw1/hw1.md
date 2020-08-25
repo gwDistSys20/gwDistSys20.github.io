@@ -6,7 +6,8 @@ permalink: /hw1/
 
 > Deadline: TBD
 > GitHub Repo Setup: TBD
-> This assignment must be completed **individually**
+> 
+> This assignment must be completed **individually**. You **MAY NOT** share your code for this assignment with any other student. It is acceptable to provide high level advice about relevant go libraries and tools, but you should not be explaining to other students how to solve the problem, nor should you be searching the internet for solutions.
 
 
 ## Overview 
@@ -32,13 +33,14 @@ You should also use this assignment to practice using git and GitHub. *You must 
 ## Parallel Sum
 You will write code to parallelize the task of summing up a list of numbers stored in a large file. Summation is not very computationally intensive, but you can imagine replacing this with a more complicated task such as performing image recognition on a large set of files, or performing sentiment analysis on a large number of tweets.
 
+> **Output:** Your progams can display any debugging output you need, but the final line of output must be `SUM: XXXX` where `XXXX` is the sum of all lines in the input file. You can assume that the input file is formatted correctly.
 
 ## Phase 1: Sequential Sum
 To start with, you must complete our starter code to correctly sum a list of numbers from a file.
 
 You are provided three files in the  `sequential_sum/` starter code:
-  - `main.go` - contains the main entrance to your program. It should determine the file to be processed as a command line argument such as `-f test1.txt`.
-  - `sum.go` - implements the core `Sum(fileName string)` function. You should fill in your code here, but should not change the signature of this function. The file also contains a `readInts` function which you should use to turn a file into an array of integers for processing by your Sum function.
+  - `main.go` - contains the main entrance to your program. It should determine the file to be processed as a command line argument such as `-f test1.txt`. It then should invoke a function in the `sum.go` file to perform the sum.
+  - `sum.go` - implements the core `Sum(fileName string)` function which must return . You should fill in your code here, but should not change the signature of this function. The file also contains a `readInts` function which you should use to turn a file into an array of integers for processing by your Sum function.
   - `sum_test.go` - includes several test cases to validate that your program works correctly. You can extend this file if you would like to add more test cases. 
 
 
