@@ -18,7 +18,7 @@ In this assignment you will solve a simple problem to familiarize you with golan
 We recommend that you work on the assignment on your own machine so that you can use the tools, text editors, etc. that you are already familiar with. 
 If you haven’t installed Golang on your own machine, visit here to install it https://golang.org/doc/install. 
 
-We will grade your labs using Go version 1.14; you should use 1.14 too. You can check your Go version by running `go version`.
+We will grade your labs using Go version 1.14; you should use 1.14 too. You can check your Go version by running `go version` -- if you have a more recent version that is OK too.
 
 We recommend writing your code in [Visual Studio Code](https://code.visualstudio.com/). In order to get help from the course instructors, you must be using Visual Studio Code and have the [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) plugin installed which will allow you to share your environment.
 
@@ -79,12 +79,28 @@ Finally, we will make our summation program accessible over a remote interface. 
 In a real implementation, the HTTP frontend would allow users to upload files to be processed. For simplicity, we will just have the user access a URL that specifies the file name to be processed, e.g., `http://localhost:8000/sum/test1.txt`. We will assume the RPC backend has access to this file.
 
 You will work on the files in `http_parallel/` for this phase. You are provided starter code for the two servers:
-  - `http_front/` - contains the files for running an HTTP server. The sample code starts a simple HTTP server and displays the requested URL. You must extend this to make an RPC to the backend specifying the file to be analyzed. After the sum is complete it should output the result such as `???XXXXXXXX???`
-  - `rpc_back/` - contains the files for the RPC server backend. It should receive RPC requests indicating the file to be processed and perform the sum using XXX goroutines. It should then return the summation result to the frontend.
+  - `http_front/` - contains the files for running an HTTP server that listens on port 8080. The sample code starts a simple HTTP server and displays the requested URL. You must extend this to make an RPC to the backend specifying the file to be analyzed. After the sum is complete it should output the result such as `???XXXXXXXX???`
+  - `rpc_back/` - contains the files for the RPC server backend that listens on port 8083. It should receive RPC requests indicating the file to be processed and and the number of goroutines to perform the sum. It should then return the summation result to the frontend.
 
-You can build and test your program with:
+You can build and start your program using *two* terminals:
 ```
+## HTTP Server -- Teriminal 1
+cd http_front/
 go build
-./parallel -f test1.txt -g 4
-SUM -83
+./http
+HTTP Listening on port 8080
+...
+
+## RPC Server -- Terminal 2
+cd rcp_back/
+go build
+./rpc
+RPC Listening on port 8083
+```
+
+You can then test your servers by accessing them with a web browser: [http://localhost:8080/file_name=test1.txt&grn=10](http://localhost:8080/file_name=test1.txt&grn=10)
+
+Or you can test using the curl command line utility:
+```
+curl .... TODO FILL IN
 ```
