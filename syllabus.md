@@ -16,13 +16,16 @@ permalink: /syllabus/
 **Course prerequisites:**
   * CSCI 6212 Algorithms (Co-Requisite)
   * Undergraduate Operating Systems
+  * Strong programming skills
+
+**Website:** [https://gwdistsys20.github.io](https://gwdistsys20.github.io)
 
 
-### Course Description:
+### Course Description
 
 This course will be an in-depth study of the algorithmic and implementation challenges in building large scale distributed applications. Topics include distributed coordination, scheduling, consistency issues, and fault tolerance algorithms. The course will cover how fundamental distributed systems concepts are applied to cloud computing environments. The course will mix algorithmic concepts and practical implementations; substantial programming experience is required.
 
-### Learning outcomes:
+### Learning outcomes
 As a result of completing this course, students will be able to:
 
 1. Design distributed architectures that are scalable and efficient 
@@ -30,12 +33,12 @@ As a result of completing this course, students will be able to:
 3. Recognize and overcome the key challenges in implementing distributed systems
 4. Analyze the performance of different distributed system designs
 
-### Direct and Independent Instruction Time:
+### Direct and Independent Instruction Time
 
 The course will include 2.5 hours of direct instruction each week. The lecture period will typically be split between live lecture, discussion, and in-class exercises. Asynchronous options will be available for students unable to attend lectures live. Students are expected to spend a minimum of five hours on independent learning per week.
 
-### Textbook:
-There is no required textbook for the class. Additional reference materials will be posted on the course website.
+### Textbook
+Students do not need to purchase a textbook for this class. The instructors may assign supplementary readings from Distributed Systems 3rd edition by Marteen van Steen and Andrew Tanenbaum, which is available for free at: [https://www.distributed-systems.net/index.php/books/ds3/](https://www.distributed-systems.net/index.php/books/ds3/)
 
 
 ### Schedule
@@ -45,18 +48,25 @@ There is no required textbook for the class. Additional reference materials will
 | :-------------: |:-------------:| :-------------:| 
 | Week 1 | Overview of Distributed Systems Challenges | |
 | Weeks 2-3 | Scalable Execution Contexts <br> Threads, Virtual Machines, Containers, Parallelism | HW1: Parallel Sum|
-| Weeks 4-5 | Communication Mechanisms <br> RPC, Sockets, HTTP, P2P | HW2: Chord|
-| Weeks 6-8 | Coordination and Consensus <br> State Machine Replication, Ordering, Agreement | Project Milestone 1, Midterm|
-| Weeks 9-10 | Reliability and Fault Tolerance <br> Consistency, Replication, Quorums | HW3: Leader Election|
+| Weeks 4-5 | Communication Mechanisms <br> RPC, Sockets, HTTP, P2P | HW2: Map Reduce|
+| Weeks 6-8 | Coordination and Consensus <br> State Machine Replication, Ordering, Agreement | HW 3: Chord; Project Milestone 1|
+| Weeks 9-10 | Reliability and Fault Tolerance <br> Consistency, Replication, Quorums | HW4: Leader Election; Midterm|
 | Weeks 11-12 | Understanding Performance <br> Throughput, Latency, Bottlenecks, Profiling | Project Milestone 2|
 | Weeks 13-14 | Applied Distributed Systems <br> Cloud and Grid Computing | Project Milestone 3|
 |Finals Period |  | Final project due|
 
+
 ### Grading
-  * Midterm exam (15%)
-  * Programming Assignments (25%) 
-  * Final project (40%)
+  * Midterm exam (10%)
+  * Programming Assignments (35%) 
+  * Final project (35%)
   * Class participation and lecture prep (20%)
+
+### Assignments
+We plan to have four programming assignments to help students learn how to deploy real distributed systems concepts in practice. Some programming assignments will be done individually, meaning students *may not* share any code with other students. In group projects, all students are expected to contribute equally.
+
+### Project
+In the second half of the semester, students will work on a group project. Project proposals will need to be approved by the instructors and students will need to submit Milestone reports on a regular basis. Instead of a final exam, students will submit a final report and video presentation describing their project.
 
 ### Lecture Preparation and Participation
 Students will be expected to prepare in advance of lectures by reading the specified materials or watching videos. A pre-quiz before each lecture will test students’ preparation and allow them to pose questions in advance of the lecture to guide discussion. Students are expected to actively participate in the class, either during the live lectures or through the online discussion system. Participation opportunities will be provided for students unable to attend lectures synchronously.
@@ -66,6 +76,7 @@ The instructors understand that students may need to be absent from class either
 
 If students anticipate missing several classes such as due to illness, they should alert the instructor as soon as possible. In this case deadlines may be extended for students and participation requirements will be relaxed.
 
+---
 
 ## University policies
 
