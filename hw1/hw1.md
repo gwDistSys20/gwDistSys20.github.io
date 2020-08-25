@@ -31,24 +31,60 @@ You should also use this assignment to practice using git and GitHub. *You must 
 ---
 
 ## Parallel Sum
-You will write code to parallelize the task of summing up a list of numbers stored in a large file. Summation is not very computationally intensive, but you can imagine replacing this with a more complicated task such as performing image recognition on a large set of files, or performing sentiment analysis on a large number of tweets.
+You will write code to parallelize the task of summing up a list of numbers stored in a large file. Summation is not very computationally intensive, but you can imagine replacing this with a more complicated task such as performing image recognition on a large set of files, or performing sentiment analysis on a large number of tweets. We will solve this problem in three phases of increasing complexity. You must solve all of them for full credit.
 
-> **Output:** Your progams can display any debugging output you need, but the final line of output must be `SUM: XXXX` where `XXXX` is the sum of all lines in the input file. You can assume that the input file is formatted correctly.
+> **Output:** Your programs can display any debugging output you need, but the final line of output must be `SUM XXXX` where `XXXX` is the sum of all lines in the input file. You can assume that the input file is formatted correctly.
 
 ## Phase 1: Sequential Sum
-To start with, you must complete our starter code to correctly sum a list of numbers from a file.
+To start with, you must complete our starter code to correctly sum a list of numbers from a file without using any parallelism.
 
 You are provided three files in the  `sequential_sum/` starter code:
   - `main.go` - contains the main entrance to your program. It should determine the file to be processed as a command line argument such as `-f test1.txt`. It then should invoke a function in the `sum.go` file to perform the sum.
   - `sum.go` - implements the core `Sum(fileName string)` function which must return . You should fill in your code here, but should not change the signature of this function. The file also contains a `readInts` function which you should use to turn a file into an array of integers for processing by your Sum function.
   - `sum_test.go` - includes several test cases to validate that your program works correctly. You can extend this file if you would like to add more test cases. 
 
+You can build, run, and test your program with:
+```
+go build
 
-## Phase 2: Go Routines
-Summing numbers is fairly trivial to implement in a sequential way, so next you must make it parallel. This will help you understand synchronization mechanisms in Golang which are fundamental in future more complicated assignments.
+./seq -f test1.txt -g 4
+SUM -83
 
-Your program should:
-  - fds
+go test
+```
 
-## Phase 3: HTTP/RPC + Go Routines
-Finally, we will make our summation program accessible over a remote interface.
+> **IMPORTANT:** At this point you should be sure to commit your code and push it to github. As you make progress on the following phases you should commit and push your code regularly. Failure to do so may cause you to lose points.
+
+## Phase 2: Goroutines
+Summing numbers is fairly trivial to implement in a sequential way, so next you must make it parallel. This will help you understand concurrency and communication mechanisms in Golang which are fundamental in future more complicated assignments.
+
+Next work on the files in `parallel/`. Your new program should extend the files in the following ways:
+  - `main.go` - should now accept a second argument `-g` which specifies how many goroutines should be started to execute the summation in parallel.
+  - `sum.go` - modifies the `Sum()` function to accept the number of goroutines to use. You should still use the `readInts` function to sequentially read the file, but then you must split up the sum across the specified number of threads.
+  - `sum_test.go` - similar to above
+
+You can build, run, and test your program with:
+```
+go build
+
+./parallel -f test1.txt -g 4
+SUM -83
+
+go test
+```
+
+## Phase 3: HTTP/RPC + Goroutines
+Finally, we will make our summation program accessible over a remote interface. HTTP is the standard interface used in the web to allow external clients to communicate with a service. Remote Procedure Calls (RPC) are another form of communication which offers more flexibility to the programmer. In this phase you will extend your program to run an HTTP Server which accepts client requests from a web browser; the server then uses RPC to pass the request to the go program which will compute the sum. This is a common 2-tier web application architecture with a web frontend and an application server backend.
+
+In a real implementation, the HTTP frontend would allow users to upload files to be processed. For simplicity, we will just have the user access a URL that specifies the file name to be processed, e.g., `http://localhost:8000/sum/test1.txt`. We will assume the RPC backend has access to this file.
+
+You will work on the files in `http_parallel/` for this phase. You are provided starter code for the two servers:
+  - `http_front/` - contains the files for running an HTTP server. The sample code starts a simple HTTP server and displays the requested URL. You must extend this to make an RPC to the backend specifying the file to be analyzed. After the sum is complete it should output the result such as `???XXXXXXXX???`
+  - `rpc_back/` - contains the files for the RPC server backend. It should receive RPC requests indicating the file to be processed and perform the sum using XXX goroutines. It should then return the summation result to the frontend.
+
+You can build and test your program with:
+```
+go build
+./parallel -f test1.txt -g 4
+SUM -83
+```
