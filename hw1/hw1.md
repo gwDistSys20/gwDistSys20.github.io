@@ -79,7 +79,7 @@ Finally, we will make our summation program accessible over a remote interface. 
 In a real implementation, the HTTP frontend would allow users to upload files to be processed. For simplicity, we will just have the user access a URL that specifies the file name to be processed, e.g., `http://localhost:8080/?f=test1.txt&g=10`. We will assume the RPC backend has access to this file.
 
 You will work on the files in `http_parallel/` for this phase. You are provided starter code for the two servers:
-  - `http_front/` - contains the files for running an HTTP server that listens on port 8080. The sample code starts a simple HTTP server and displays the requested URL. You must extend this to make an RPC to the backend specifying the file to be analyzed. After the sum is complete it should output the result such as `???@HUADONG -- What should output look like????`
+  - `http_front/` - contains the files for running an HTTP server that listens on port 8080. The sample code starts a simple HTTP server and displays the requested URL. You must extend this to make an RPC to the backend specifying the file to be analyzed. After the sum is complete it should output the result such as `test1.txt-1--83`
   - `rpc_back/` - contains the files for the RPC server backend that listens on port 8083. It should receive RPC requests indicating the file to be processed and and the number of goroutines to perform the sum. It should then return the summation result to the frontend.
 
 You can build and start your program using *two* terminals:
@@ -102,5 +102,5 @@ You can then test your servers by accessing them with a web browser: [http://loc
 
 Or you can test using the curl command line utility:
 ```
-curl .... @HUADONG FILL IN
+curl --request GET -sL  --url 'http://localhost:8080/?f=test1.txt&g=1'
 ```
