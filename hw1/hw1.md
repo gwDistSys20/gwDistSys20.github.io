@@ -45,10 +45,10 @@ You are provided three files in the  `sequential_sum/` starter code:
 
 You can build, run, and test your program with:
 ```
-go build
+go build -o seq
 
 ./seq -f test1.txt
-SUM -83
+-83
 
 go test
 ```
@@ -65,10 +65,10 @@ Next work on the files in `parallel/`. Your new program should extend the files 
 
 You can build, run, and test your program with:
 ```
-go build
+go build -o parallel
 
 ./parallel -f test1.txt -g 4
-SUM -83
+-83
 
 go test
 ```
@@ -86,21 +86,22 @@ You can build and start your program using *two* terminals:
 ```
 ## HTTP Server -- Teriminal 1
 cd http_front/
-go build
+go build -o http
 ./http
 HTTP Listening on port 8080
 ...
 
 ## RPC Server -- Terminal 2
 cd rcp_back/
-go build
+go build  -o rpc
 ./rpc
 RPC Listening on port 8083
 ```
 
-You can then test your servers by accessing them with a web browser: [http://localhost:8080/f=test1.txt&g=10](http://localhost:8080/f=test1.txt&g=10)
+You can then test your servers by accessing them with a web browser: [http://localhost:8080/f=test1.txt&g=1](http://localhost:8080/f=test1.txt&g=1)
 
 Or you can test using the curl command line utility:
 ```
 curl --request GET -sL  --url 'http://localhost:8080/?f=test1.txt&g=1'
+{"file_name":"test1.txt","go_routine_nums":1,"sum":-83}
 ```
