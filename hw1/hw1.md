@@ -18,6 +18,8 @@ In this assignment you will solve a simple problem to familiarize you with golan
 We recommend that you work on the assignment on your own machine so that you can use the tools, text editors, etc. that you are already familiar with. 
 If you haven’t installed Golang on your own machine, visit here to install it https://golang.org/doc/install. 
 
+If you haven't used Go, you can take the [Go Tour](https://tour.golang.org/list) or find many other tutorials and documents online.
+
 We will grade your labs using Go version 1.14; you should use 1.14 too. You can check your Go version by running `go version` -- if you have a more recent version that is OK too.
 
 We recommend writing your code in [Visual Studio Code](https://code.visualstudio.com/). In order to get help from the course instructors, you must be using Visual Studio Code and have the [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) plugin installed which will allow you to share your environment.
