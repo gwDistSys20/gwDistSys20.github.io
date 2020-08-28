@@ -35,7 +35,7 @@ You should also use this assignment to practice using git and GitHub. *You must 
 ## Parallel Sum
 You will write code to parallelize the task of summing up a list of numbers stored in a large file. Summation is not very computationally intensive, but you can imagine replacing this with a more complicated task such as performing image recognition on a large set of files, or performing sentiment analysis on a large number of tweets. We will solve this problem in three phases of increasing complexity. You must solve all of them for full credit.
 
-> **Output:** Your programs can display any debugging output you need, but the final line of output must be `SUM XXXX` where `XXXX` is the sum of all lines in the input file. You can assume that the input file is formatted correctly.
+> **Output:** Your programs can display any debugging output you need when you are developing, but the version you submit for grading should not contain any debugging info. For each phases, the output function code has been implemeted for you, and you should not make any changes to it. You can assume that the input file is formatted correctly.
 
 ## Phase 1: Sequential Sum
 To start with, you must complete our starter code to correctly sum a list of numbers from a file without using any parallelism.
