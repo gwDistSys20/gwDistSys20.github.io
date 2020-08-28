@@ -53,6 +53,10 @@ go build -o seq
 go test
 ```
 
+Hints:
+  - This should be pretty easy. Just learn how to use for loops and addition
+  - Lookup how to have go process command line arguments
+
 > **IMPORTANT:** At this point you should be sure to commit your code and push it to github. As you make progress on the following phases you should commit and push your code regularly. Failure to do so may cause you to lose points.
 
 ## Phase 2: Goroutines
@@ -72,6 +76,10 @@ go build -o parallel
 
 go test
 ```
+
+Hints:
+  - Learn about goroutines
+  - Learn about go channels for communication
 
 ## Phase 3: HTTP/RPC + Goroutines
 Finally, we will make our summation program accessible over a remote interface. HTTP is the standard interface used in the web to allow external clients to communicate with a service. Remote Procedure Calls (RPC) are another form of communication which offers more flexibility to the programmer. In this phase you will extend your program to run an HTTP Server which accepts client requests from a web browser; the server then uses RPC to pass the request to the go program which will compute the sum. This is a common 2-tier web application architecture with a web frontend and an application server backend.
@@ -105,3 +113,8 @@ Or you can test using the curl command line utility:
 curl --request GET -sL  --url 'http://localhost:8080/?f=test1.txt&g=1'
 {"file_name":"test1.txt","go_routine_nums":1,"sum":-83}
 ```
+Hints:
+  - Make sure you run both the front and back programs!
+  - The starter code provides a basic RPC example and starts the HTTP server for you
+  - Learn how to process an HTTP request to extract fields in the URL
+  - You can test your program either with Curl or a real web browser
