@@ -118,3 +118,4 @@ Hints:
   - The starter code provides a basic RPC example and starts the HTTP server for you
   - Learn how to process an HTTP request to extract fields in the URL
   - You can test your program either with Curl or a real web browser
+  - Always verify that your code has been pushed to github by checking your commits on the web interface!
