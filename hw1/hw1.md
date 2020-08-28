@@ -94,18 +94,18 @@ You will work on the files in `http_parallel/` for this phase. You are provided 
 
 You can build and start your program using *two* terminals:
 ```
-## HTTP Server -- Teriminal 1
-cd http_front/
-go build -o http
-./http
-HTTP Listening on port 8080
-...
-
-## RPC Server -- Terminal 2
+## RPC Server -- Terminal 1
 cd rcp_back/
 go build  -o rpc
 ./rpc
 RPC Listening on port 8083
+...
+## HTTP Server -- Teriminal 2
+cd http_front/
+go build -o http
+./http
+HTTP Listening on port 8080
+
 ```
 
 You can then test your servers by accessing them with a web browser: [http://localhost:8080/f=test1.txt&g=1](http://localhost:8080/f=test1.txt&g=1)
