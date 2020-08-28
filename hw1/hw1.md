@@ -95,12 +95,12 @@ You will work on the files in `http_parallel/` for this phase. You are provided 
 You can build and start your program using *two* terminals:
 ```
 ## RPC Server -- Terminal 1
-cd rcp_back/
+cd rpc_back/
 go build  -o rpc
 ./rpc
 RPC Listening on port 8083
 ...
-## HTTP Server -- Teriminal 2
+## HTTP Server -- Terminal 2
 cd http_front/
 go build -o http
 ./http
