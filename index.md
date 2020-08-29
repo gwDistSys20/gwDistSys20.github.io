@@ -5,7 +5,7 @@ layout: home
 <div class="wrapper" markdown="0"><div class="footer-col-wrapper">
 <div class="footer-col two-col-1">
     <ul class="contact-list">
-        <li><b>Prof. Tim Wood</b></li>
+        <li><a href="https://faculty.cs.gwu.edu/timwood"><b>Prof. Tim Wood</b></a></li>
         <li><a href="mailto:timwood@gwu.edu">timwood@gwu.edu</a></li>
         <li>Office Hours: TBD, online</li>
         <li>Section 10</li>
@@ -28,8 +28,10 @@ layout: home
 
 
 ## Announcements ##
-- This website is under construction.
-- Both sections 10 and 11 of CSCI 6421 will meet together as one class.
+- This website is under construction! More details will be added soon. Check the [Syllabus](syllabus/) for more info.
+- Both sections 10 and 11 of CSCI 6421 will meet together *as one class*. You can register for either section with no difference. 
+- *We will meet online using the Blackboard Collaborate Ultra* tool.
+- If for some reason you want to attend class but you are not yet officially registered, you must contact Prof. Wood before the first class.
 
 
 <hr>
