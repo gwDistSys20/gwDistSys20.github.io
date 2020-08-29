@@ -49,7 +49,7 @@ Students do not need to purchase a textbook for this class. The instructors may 
 | Week 1 | Overview of Distributed Systems Challenges | |
 | Weeks 2-3 | Scalable Execution Contexts <br> Threads, Virtual Machines, Containers, Parallelism | HW1: Parallel Sum|
 | Weeks 4-5 | Communication Mechanisms <br> RPC, Sockets, HTTP, P2P | HW2: Map Reduce|
-| Weeks 6-8 | Coordination and Consensus <br> State Machine Replication, Ordering, Agreement | HW 3: Chord; Project Milestone 1|
+| Weeks 6-8 | Coordination and Consensus <br> State Machine Replication, Ordering, Agreement | HW 3: DHTs; Project Milestone 1|
 | Weeks 9-10 | Reliability and Fault Tolerance <br> Consistency, Replication, Quorums | HW4: Leader Election; Midterm|
 | Weeks 11-12 | Understanding Performance <br> Throughput, Latency, Bottlenecks, Profiling | Project Milestone 2|
 | Weeks 13-14 | Applied Distributed Systems <br> Cloud and Grid Computing | Project Milestone 3|

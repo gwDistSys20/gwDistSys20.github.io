@@ -30,8 +30,9 @@ layout: home
 ## Announcements ##
 - This website is under construction! More details will be added soon. Check the [Syllabus](syllabus/) for more info.
 - Both sections 10 and 11 of CSCI 6421 will meet together *as one class*. You can register for either section with no difference. 
-- *We will meet online using the Blackboard Collaborate Ultra* tool.
+- *We will meet online using Blackboard Collaborate Ultra*.
 - If for some reason you want to attend class but you are not yet officially registered, you must contact Prof. Wood before the first class.
+- The course will use the Go programming language. Get ready to code!
 
 
 <hr>
@@ -44,13 +45,16 @@ layout: home
     <thead>
     <tr><th style="text-align:center" colspan="2">Part 1: Building Blocks</th></tr>
     </thead>
-    <tr><td style="width:20%">Overview
+    <tr><td style="width:20%"><b>Overview</b>
     <br>9/3/2020
-    </td><td> </td>
+    </td><td>
+    Lecture Slides (will be posted here)<br>
+    HW1: Parallel Sum -- Due Monday 9/7 11:59PM
+    </td>
     </tr>
-    <tr><td>Scalable Execution</td><td> </td>
+    <tr><td><b>Scalable Execution</b></td><td> </td>
     </tr>
-    <tr><td>Communication</td><td> </td>
+    <tr><td><b>Communication</b></td><td> </td>
     </tr>
 </table>
 
@@ -58,11 +62,11 @@ layout: home
     <thead>
     <tr><th style="text-align:center" colspan="2">Part 2: Principles of Distributed Systems</th></tr>
     </thead>
-    <tr><td style="width:20%">Coordination</td><td> </td>
+    <tr><td style="width:20%"><b>Coordination</b></td><td> </td>
     </tr>
-    <tr><td>Fault Tolerance</td><td> </td>
+    <tr><td><b>Fault Tolerance</b></td><td> </td>
     </tr>
-    <tr><td>Performance</td><td> </td>
+    <tr><td><b>Performance</b></td><td> </td>
     </tr>
 </table>
 
@@ -70,9 +74,9 @@ layout: home
     <thead>
     <tr><th style="text-align:center" colspan="2">Part 3: Distributed Systems in Practice</th></tr>
     </thead>
-    <tr><td style="width:20%">Cloud Computing</td><td> </td>
+    <tr><td style="width:20%"><b>Cloud Computing</b></td><td> </td>
     </tr>
-    <tr><td>Grid Computing</td><td> </td>
+    <tr><td><b>Grid Computing</b></td><td> </td>
     </tr>
 </table>
 
