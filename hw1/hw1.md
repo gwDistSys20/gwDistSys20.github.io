@@ -9,9 +9,10 @@ permalink: /hw1/
 > 
 > This assignment must be completed **individually**. You **MAY NOT** share your code for this assignment with any other student. It is acceptable to provide high level advice about relevant go libraries and tools, but you should not be explaining to other students how to solve the problem, nor should you be searching the internet for solutions.
 
-
 ## Overview 
 In this assignment you will solve a simple problem to familiarize you with golang, especially with Goroutine, http, and RPC. The Go web site contains lots of tutorial information and this might be helpful to you if you are new with Golang. https://tour.golang.org/
+
+> **NOTE:** This assignment description is still being finalized!
 
 ### Go Setup and Dev Environment
 
@@ -26,7 +27,7 @@ We recommend writing your code in [Visual Studio Code](https://code.visualstudio
 
 ### GitHub
 
-We will use GitHub Classrooms to manage your repositories and submit code. You must create a (free) GitHub account if you do not already have one. Use [this link](#) to create your repository.
+We will use GitHub Classrooms to manage your repositories and submit code. You must create a (free) GitHub account if you do not already have one. Use the link at the top of this page to create your repository.
 
 You should also use this assignment to practice using git and GitHub. *You must create at least one commit and push your code to GitHub for each of the phases listed below to receive full credit.*
 

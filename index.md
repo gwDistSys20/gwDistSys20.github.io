@@ -39,6 +39,8 @@ layout: home
 
 ## Schedule  ##
 
+All deadlines are 11:59PM Eastern Time
+
 <div style="font-size:90%">
 
 <table>
@@ -49,12 +51,22 @@ layout: home
     <br>9/3/2020
     </td><td>
     Lecture Slides (will be posted here)<br>
-    HW1: Parallel Sum -- Due Monday 9/7 11:59PM
+    </td>
+    </tr>
+    <tr><td style="text-align:right"><i>Tasks:</i></td>
+    <td>
+    <a href="hw1/">HW1: Parallel Sum</a> due Wednesday 9/9 -- <a href="https://forms.gle/yd45FuMR7HSBJvMs9">Student Survey</a> due Monday 9/7
     </td>
     </tr>
     <tr><td><b>Scalable Execution</b></td><td> </td>
     </tr>
+    <tr><td style="text-align:right"><i>Tasks:</i></td> 
+    <td> </td>
+    </tr>
     <tr><td><b>Communication</b></td><td> </td>
+    </tr>
+    <tr><td style="text-align:right"><i>Tasks:</i></td> 
+    <td> </td>
     </tr>
 </table>
 

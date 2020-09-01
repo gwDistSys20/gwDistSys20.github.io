@@ -69,7 +69,18 @@ We plan to have four programming assignments to help students learn how to deplo
 In the second half of the semester, students will work on a group project. Project proposals will need to be approved by the instructors and students will need to submit Milestone reports on a regular basis. Instead of a final exam, students will submit a final report and video presentation describing their project.
 
 ### Lecture Preparation and Participation
-Students will be expected to prepare in advance of lectures by reading the specified materials or watching videos. A pre-quiz before each lecture will test students’ preparation and allow them to pose questions in advance of the lecture to guide discussion. Students are expected to actively participate in the class, either during the live lectures or through the online discussion system. Participation opportunities will be provided for students unable to attend lectures synchronously.
+
+
+*Prep Grading:* Students will be expected to prepare in advance of lectures by reading the specified materials or watching videos. A prep-quiz before each lecture will test students’ preparation and allow them to pose questions in advance of the lecture to guide discussion. These must be completed by the deadline (usually before class) to receive credit. No late submissions will be accepted.
+
+
+*Participation Grading:* Students are expected to actively participate in the class, either during the live lectures or through the online discussion system. Participation opportunities will be provided for students unable to attend lectures synchronously. Each week you can earn up to 2 participation points. You obtain 1 point each time you perform one of the following:
+ - Attend a live lecture or office hour session
+ - Post a question, answer, or comment on Slack or in the prep-quiz.
+
+You can obtain your 2 points per week from any combination of the above. Participating more than twice a week is encouraged, but you can still get at most 2 points per week! Your final participation grade will allow for one week with no participation, i.e., if there are 15 weeks with participation point opportunities, then we will sum your total points earned and divide by (14\*2=28) instead of (15\*2=30).
+
+There will also be periodic opportunities for bonus participation points -- subscribe to slack notifications to be sure you don't miss out! 
 
 ### Illness and Absence Policy
 The instructors understand that students may need to be absent from class either due to illness or other personal situations. For personal situations such as being in a difficult time zone, internet connectivity issues, etc., students can watch lectures asynchronously and are still expected to participate via other means such as the course message board. 
