@@ -30,7 +30,7 @@ layout: home
 ## Announcements ##
 - This website is under construction! More details will be added soon. Check the [Syllabus](syllabus/) for more info.
 - Both sections 10 and 11 of CSCI 6421 will meet together *as one class*. You can register for either section with no difference. 
-- *We will meet online using Blackboard Collaborate Ultra*.
+- *We will meet online using Blackboard Collaborate Ultra*. If we have problems with Blackboard, check here or on [Slack](https://join.slack.com/t/gwdistsys20/signup) for a backup plan!
 - If for some reason you want to attend class but you are not yet officially registered, you must contact Prof. Wood before the first class.
 - The course will use the Go programming language. Get ready to code!
 
@@ -55,7 +55,7 @@ All deadlines are 11:59PM Eastern Time
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td>
     <td>
-    <a href="hw1/">HW1: Parallel Sum</a> due Wednesday 9/9 -- <a href="https://forms.gle/yd45FuMR7HSBJvMs9">Student Survey</a> due Monday 9/7
+    <a href="hw1/">HW1: Parallel Sum</a> due Wednesday 9/9 -- <a href="https://forms.gle/yd45FuMR7HSBJvMs9">Student Survey</a> due Monday 9/7 -- <a href="https://join.slack.com/t/gwdistsys20/signup">Join Slack</a>
     </td>
     </tr>
     <tr><td><b>Scalable Execution</b></td><td> </td>
