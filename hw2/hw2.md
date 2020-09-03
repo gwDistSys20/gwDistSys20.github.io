@@ -35,7 +35,7 @@ You'll need to make sure <tt>/usr/local/bin</tt> is on your <tt>PATH</tt>.
 
 #### Windows
 
-The labs probably won't work directly on Windows. If you're feeling adventurous, you can try to get them running inside [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) and following the Linux instructions above. Otherwise, you can fall back to Athena.
+The labs probably <b>won't</b> work directly on Windows. If you're feeling adventurous, you can try to get them running inside [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) and following the Linux instructions above. Otherwise, you can fall back to Athena.
 
 #### Athena
 
@@ -46,18 +46,11 @@ You can log into a public Athena host with <tt>ssh {your kerberos}@athena.dialup
 
 ## Getting started
 
-You'll fetch the initial lab software with [git](https://git-scm.com/) (a version control system). To learn more about git, look at the [Pro Git book](https://git-scm.com/book/en/v2) or the [git user's manual](http://www.kernel.org/pub/software/scm/git/docs/user-manual.html). To fetch the 6.824 lab software:
-
-<pre>$ git clone git://g.csail.mit.edu/6.824-golabs-2020 6.824
-$ cd 6.824
-$ ls
-Makefile src
-$
-</pre>
+You'll fetch the initial lab software with [git](https://git-scm.com/) (a version control system). To learn more about git, look at the [Pro Git book](https://git-scm.com/book/en/v2) or the [git user's manual](http://www.kernel.org/pub/software/scm/git/docs/user-manual.html). 
 
 We supply you with a simple sequential mapreduce implementation in <tt>src/main/mrsequential.go</tt>. It runs the maps and reduces one at a time, in a single process. We also provide you with a couple of MapReduce applications: word-count in <tt>mrapps/wc.go</tt>, and a text indexer in <tt>mrapps/indexer.go</tt>. You can run word count sequentially as follows:
 
-<pre>$ cd ~/6.824
+<pre>$ cd mapreduce
 $ cd src/main
 $ go build -buildmode=plugin ../mrapps/wc.go
 $ rm mr-out*
@@ -110,14 +103,14 @@ We supply you with a test script in <tt>main/test-mr.sh</tt>. The tests check th
 
 If you run the test script now, it will hang because the master never finishes:
 
-<pre>$ cd ~/6.824/src/main
-$ sh test-mr.sh
+<pre>$ cd mapreduce
+$ make
 *** Starting wc test.
 </pre>
 
 You can change <tt>ret := false</tt> to true in the Done function in <tt>mr/master.go</tt> so that the master exits immediately. Then:
 
-<pre>$ sh ./test-mr.sh
+<pre>$ make
 *** Starting wc test.
 sort: No such file or directory
 cmp: EOF on mr-wc-all
@@ -130,7 +123,7 @@ The test script expects to see output in files named <tt>mr-out-X</tt>, one for 
 
 When you've finished, the test script output should look like this:
 
-<pre>$ sh ./test-mr.sh
+<pre>$ make
 *** Starting wc test.
 --- wc test: PASS
 *** Starting indexer test.
@@ -191,9 +184,9 @@ A few rules:
 *   The map part of your worker can use the <tt>ihash(key)</tt> function (in <tt>worker.go</tt>) to pick the reduce task for a given key.
 *   You can steal some code from <tt>mrsequential.go</tt> for reading Map input files, for sorting intermedate key/value pairs between the Map and Reduce, and for storing Reduce output in files.
 *   The master, as an RPC server, will be concurrent; don't forget to lock shared data.
-*   Use Go's race detector, with <tt>go build -race</tt> and <tt>go run -race</tt>. <tt>test-mr.sh</tt> has a comment that shows you how to enable the race detector for the tests.
+*   Use Go's race detector, with <tt>go build -race</tt> and <tt>go run -race</tt>. <tt>main/test-mr.sh</tt> has a comment that shows you how to enable the race detector for the tests.
 *   Workers will sometimes need to wait, e.g. reduces can't start until the last map has finished. One possibility is for workers to periodically ask the master for work, sleeping with <tt>time.Sleep()</tt> between each request. Another possibility is for the relevant RPC handler in the master to have a loop that waits, either with <tt>time.Sleep()</tt> or <tt>sync.Cond</tt>. Go runs the handler for each RPC in its own thread, so the fact that one handler is waiting won't prevent the master from processing other RPCs.
-*   The master can't reliably distinguish between crashed workers, workers that are alive but have stalled for some reason, and workers that are executing but too slowly to be useful. The best you can do is have the master wait for some amount of time, and then give up and re-issue the task to a different worker. For this lab, have the master wait for ten seconds; after that the master should assume the worker has died (of course, it might not have).
+*   The master can't reliably distinguish between crashed workers, workers that are alive but have stalled for some reason, and workers that are executing but too slowly to be useful. The best you can do is have the master wait for some amount of time, and then give up and re-issue the task to a different worker. For this lab, have the master wait for <tt>ten</tt> seconds; after that the master should assume the worker has died (of course, it might not have).
 *   To test crash recovery, you can use the <tt>mrapps/crash.go</tt> application plugin. It randomly exits in the Map and Reduce functions.
 *   To ensure that nobody observes partially written files in the presence of crashes, the MapReduce paper mentions the trick of using a temporary file and atomically renaming it once it is completely written. You can use <tt>ioutil.TempFile</tt> to create a temporary file and <tt>os.Rename</tt> to atomically rename it.
 *   <tt>test-mr.sh</tt> runs all the processes in the sub-directory <tt>mr-tmp</tt>, so if something goes wrong and you want to look at intermediate or output files, look there.
