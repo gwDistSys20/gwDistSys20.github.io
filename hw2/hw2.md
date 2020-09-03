@@ -202,16 +202,8 @@ A few rules:
 
 <div class="important">
 
-Before submitting, please run <tt>test-mr.sh</tt> one final time.
+Before submitting, please enter lab's root directory and run <tt>make</tt> one final time.
 
 </div>
 
-Use the <tt>make lab1</tt> command to package your lab assignment and upload it to the class's submission website, located at [https://6824.scripts.mit.edu/2020/handin.py/](https://6824.scripts.mit.edu/2020/handin.py/).
-
-You may use your MIT Certificate or request an API key via email to log in for the first time. Your API key (<tt>XXX</tt>) is displayed once you logged in, which can be used to upload lab1 from the console as follows.
-
-<pre>$ cd ~/6.824
-$ echo XXX > api.key
-$ make lab1</pre>
-
-Check the submission website to make sure it thinks you submitted this lab!
+Push your finilized code to github, but remember to remove mr intermediate files and compiled binary file.
