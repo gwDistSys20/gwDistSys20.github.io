@@ -50,23 +50,23 @@ All deadlines are 11:59PM Eastern Time
     <tr><td style="width:20%"><b>Overview</b>
     <br>9/3/2020
     </td><td>
-    Lecture Slides (will be posted here)<br>
+    Lecture Slides and Video (will be posted here)<br>
     </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td>
     <td>
-    <a href="hw1/">HW1: Parallel Sum</a> due Wednesday 9/9 -- <a href="https://forms.gle/yd45FuMR7HSBJvMs9">Student Survey</a> due Monday 9/7 -- <a href="https://join.slack.com/t/gwdistsys20/signup">Join Slack</a>
+    <a href="https://join.slack.com/t/gwdistsys20/signup">Join Slack</a> today! -- <a href="https://forms.gle/yd45FuMR7HSBJvMs9">Student Survey</a> due Monday 9/7 -- <a href="hw1/">HW1: Parallel Sum</a> due Tuesday 9/15
     </td>
     </tr>
     <tr><td><b>Scalable Execution</b></td><td> </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td> 
-    <td> </td>
+    <td>HW2: Map Reduce </td>
     </tr>
     <tr><td><b>Communication</b></td><td> </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td> 
-    <td> </td>
+    <td>HW3: Distributed Hash Table </td>
     </tr>
 </table>
 
