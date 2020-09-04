@@ -5,14 +5,12 @@ permalink: /hw1/
 ---
 
 > Deadline: Tuesday 9/15/2020
-> GitHub Repo Setup: TBD
+> GitHub Repo Setup: [https://classroom.github.com/a/4Mb4nNod](https://classroom.github.com/a/4Mb4nNod)
 > 
 > This assignment must be completed **individually**. You **MAY NOT** share your code for this assignment with any other student. It is acceptable to provide high level advice about relevant go libraries and tools, but you should not be explaining to other students how to solve the problem, nor should you be searching the internet for solutions.
 
 ## Overview 
 In this assignment you will solve a simple problem to familiarize you with golang, especially with Goroutine, http, and RPC. The Go web site contains lots of tutorial information and this might be helpful to you if you are new with Golang. https://tour.golang.org/
-
-> **NOTE:** This assignment description is still being finalized!
 
 ### Go Setup and Dev Environment
 
