@@ -50,7 +50,7 @@ All deadlines are 11:59PM Eastern Time
     <tr><td style="width:20%"><b>Overview</b>
     <br>9/3/2020
     </td><td>
-    Lecture Slides and Video (will be posted here)<br>
+    <a href="/slides/1-introduction.pdf">Lecture Slides</a> and <a href="https://blackboard.gwu.edu/webapps/collab-ultra/tool/collabultra?course_id=_342915_1&amp;mode=cpview">Video (on BlackBoard)</a><br>
     </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td>
