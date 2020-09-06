@@ -107,7 +107,7 @@ HTTP Listening on port 8080
 
 ```
 
-You can then test your servers by accessing them with a web browser: [http://localhost:8080/f=test1.txt&g=1](http://localhost:8080/f=test1.txt&g=1)
+You can then test your servers by accessing them with a web browser: [http://localhost:8080/?f=test1.txt&g=1](http://localhost:8080/?f=test1.txt&g=1)
 
 Or you can test using the curl command line utility:
 ```
