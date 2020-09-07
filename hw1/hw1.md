@@ -120,3 +120,28 @@ Hints:
   - Learn how to process an HTTP request to extract fields in the URL
   - You can test your program either with Curl or a real web browser
   - Always verify that your code has been pushed to github by checking your commits on the web interface!
+
+## Submission and Grading
+When you are finished with your assignment follow these steps:
+
+  1. Make sure your code doesn't have any extraneous outputs and matches the requirements above
+  2. Commit and Push your code, check the github interface to be sure it is there
+  3. (Optional) You can check whether your code passes our test cases on the GitHub website by going to Actions -> Autograding and then checking the `Run education/autograding@v1` test. If any part of the test fails, then the whole test will be marked as failed. However, when grading we will check each test individually.
+  4. (**IMPORTANT**) Go to the Pull Request web page and click the `Feedback` pull request. Add a comment that says `@HuadongHu code is ready to review`.  If any aspects of your code are incomplete or not working, you should explain which parts have a problem in your comment.
+
+Failure to follow the above steps will cause you to lose points.
+
+**Rubric:** Your assignment will be graded as follows
+```
+X / 4:  Sequential sum basic requirements (command line arguments, output format, code quality, etc) 
+X / 6:  Sequential sum works correctly
+X / 4:  Parallel sum basic requirements (command line arguments, output format, code quality, etc)
+X / 12: Parallel sum works correctly
+X / 4:  HTTP/RPC basic requirements (http/grpc status, code quality, etc)
+X / 15: HTTP/RPC sum works correctly
+X / 5:  GitHub used correctly
+=======
+XX / 50 total points
+```
+
+**Late Policy:** Late submissions will lose 5 points (out of 50) per 24 hour period after the deadline (i.e., submitting one hour late is -5, submitting 25 hours late is -10, etc). If you make any commits to your repository after the deadline, the submission will be considered late unless you have already coordinated this with the instructors.
