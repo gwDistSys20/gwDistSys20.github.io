@@ -190,8 +190,8 @@ A few rules:
 <div class="important">
 
 <p>Before submitting, please enter lab's root directory and run <tt>make</tt> one final time.</p>
-<p>Make sure your code doesn’t have any extraneous outputs. We have provided an output function `DPrintf` on <pre>src/mr/common.go</pre>, make sure to set `debugEnabled = false` when submitting for grading.
+<p>Make sure your code doesn’t have any extraneous outputs. We have provided an output function `DPrintf` on <tt>src/mr/common.go</tt>, make sure to set `debugEnabled = false` when submitting for grading.
 
 </div>
 
-Push your finilized code to github, but remember to remove mr intermediate files and compiled binary file.
+<p> Push your finilized code to github, but remember to remove mr intermediate files and compiled binary file.</p>
