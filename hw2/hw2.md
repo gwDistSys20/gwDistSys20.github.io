@@ -10,9 +10,9 @@ In this lab you'll build a MapReduce system. You'll implement a worker process t
 
 ## Collaboration Policy
 
-You must write all the code you hand in for 6.824, except for code that we give you as part of assignments. You are not allowed to look at anyone else's solution, and you are not allowed to look at solutions from previous years. You may discuss the assignments with other students, but you may not look at or copy each others' code. The reason for this rule is that we believe you will learn the most by designing and implementing your lab solution yourself.
+You must write all the code you hand in, except for code that we give you as part of assignments. You are not allowed to look at anyone else's solution, and you are not allowed to look at solutions from previous years. You may discuss the assignments with other students, but you may not look at or copy each others' code. The reason for this rule is that we believe you will learn the most by designing and implementing your lab solution yourself.
 
-Please do not publish your code or make it available to current or future 6.824 students. <tt>github.com</tt> repositories are public by default, so please don't put your code there unless you make the repository private. You may find it convenient to use [MIT's GitHub](https://github.mit.edu/), but be sure to create a private repository.
+Please do not publish your code or make it available to current or future students. <tt>github.com</tt> repositories are public by default, so please don't put your code there unless you make the repository private.
 
 ## Software
 
@@ -37,12 +37,6 @@ You'll need to make sure <tt>/usr/local/bin</tt> is on your <tt>PATH</tt>.
 
 The labs probably <b>won't</b> work directly on Windows. If you're feeling adventurous, you can try to get them running inside [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) and following the Linux instructions above. Otherwise, you can fall back to Athena.
 
-#### Athena
-
-You can log into a public Athena host with <tt>ssh {your kerberos}@athena.dialup.mit.edu</tt>. Once you're logged in, to get Go 1.13, run:
-
-<pre>$ setup ggo
-</pre>
 
 ## Getting started
 
@@ -195,7 +189,8 @@ A few rules:
 
 <div class="important">
 
-Before submitting, please enter lab's root directory and run <tt>make</tt> one final time.
+<p>Before submitting, please enter lab's root directory and run <tt>make</tt> one final time.</p>
+<p>Make sure your code doesn’t have any extraneous outputs. We have provided an output function `DPrintf` on <pre>src/mr/common.go</pre>, make sure to set `debugEnabled = false` when submitting for grading.
 
 </div>
 
