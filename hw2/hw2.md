@@ -4,38 +4,26 @@ title: "HW2: Map Reduce"
 permalink: /hw2/
 ---
 
+> Deadline: Tuesday 9/29/2020
+> GitHub Repo Setup: TBD
+> This assignment must be completed in **groups of at most 4 students**. You **MAY NOT** share your code for this assignment with any other group. It is acceptable to provide high level advice about relevant go libraries and tools, but you should not be explaining to other groups how to solve the problem, nor should you be searching the internet for solutions.
+
+
 ## Introduction
 
 In this lab you'll build a MapReduce system. You'll implement a worker process that calls application Map and Reduce functions and handles reading and writing files, and a master process that hands out tasks to workers and copes with failed workers. You'll be building something similar to the [MapReduce paper](http://research.google.com/archive/mapreduce-osdi04.pdf).
 
 ## Collaboration Policy
 
-You must write all the code you hand in, except for code that we give you as part of assignments. You are not allowed to look at anyone else's solution, and you are not allowed to look at solutions from previous years. You may discuss the assignments with other students, but you may not look at or copy each others' code. The reason for this rule is that we believe you will learn the most by designing and implementing your lab solution yourself.
+As a team you must write all the code you hand in, except for code that we give you as part of assignments. You are not allowed to look at other group's solution, and you are not allowed to look at solutions from previous years. You may discuss the assignments with other groups, but you may not look at or copy each others' code. The reason for this rule is that we believe you will learn the most by designing and implementing your lab solution yourself.
+
+> *All students* on a team are expected to contribute to the coding. When you submit your assignment you will also provide us with feedback on how evenly work was divided in your team. **Make sure that you are doing your part and not causing your teammates grief by waiting until the last minute!**
 
 Please do not publish your code or make it available to current or future students. <tt>github.com</tt> repositories are public by default, so please don't put your code there unless you make the repository private.
 
-## Software
 
-You'll implement this lab (and all the labs) in [Go](http://www.golang.org/). The Go web site contains lots of tutorial information. We will grade your labs using Go version 1.13; you should use 1.13 too. You can check your Go version by running <tt>go version</tt>.
 
-We recommend that you work on the labs on your own machine, so you can use the tools, text editors, etc. that you are already familiar with. Alternatively, you can work on the labs on Athena.
-
-#### macOS
-
-You can use [Homebrew](https://brew.sh/) to install Go. After installing Homebrew, run <tt>brew install go</tt>.
-
-#### Linux
-
-Depending on your Linux distribution, you might be able to get an up-to-date version of Go from the package repository, e.g. by running <tt>apt install golang</tt>. Otherwise, you can manually install a binary from Go's website. First, make sure that you're running a 64-bit kernel (<tt>uname -a</tt> should mention "x86_64 GNU/Linux"), and then run:
-
-<pre>$ wget -qO- https://dl.google.com/go/go1.13.6.linux-amd64.tar.gz | sudo tar xz -C /usr/local
-</pre>
-
-You'll need to make sure <tt>/usr/local/bin</tt> is on your <tt>PATH</tt>.
-
-#### Windows
-
-The labs probably <b>won't</b> work directly on Windows. If you're feeling adventurous, you can try to get them running inside [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) and following the Linux instructions above. Otherwise, you can fall back to Athena.
+> **A Note for Windows users:** This assignment probably <b>won't</b> work directly on Windows. If you're feeling adventurous, you can try to get them running inside [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10). Otherwise, you can use an Amazon VM and VS Code's Remote developer extension.
 
 
 ## Getting started
