@@ -6,29 +6,27 @@ permalink: /hw2/
 
 > Deadline: Tuesday 9/29/2020
 > GitHub Repo Setup: TBD
-> This assignment must be completed in **groups of at most 4 students**. You **MAY NOT** share your code for this assignment with any other group. It is acceptable to provide high level advice about relevant go libraries and tools, but you should not be explaining to other groups how to solve the problem, nor should you be searching the internet for solutions.
-
+> This assignment must be completed in **groups of at most 4 students**. 
 
 ## Introduction
 
 In this lab you'll build a MapReduce system. You'll implement a worker process that calls application Map and Reduce functions and handles reading and writing files, and a master process that hands out tasks to workers and copes with failed workers. You'll be building something similar to the [MapReduce paper](http://research.google.com/archive/mapreduce-osdi04.pdf).
 
+> To solve this assignment you will need to understand the MapReduce architecture and algorithm... you will need to read the paper to get the details!
+
 ## Collaboration Policy
 
-As a team you must write all the code you hand in, except for code that we give you as part of assignments. You are not allowed to look at other group's solution, and you are not allowed to look at solutions from previous years. You may discuss the assignments with other groups, but you may not look at or copy each others' code. The reason for this rule is that we believe you will learn the most by designing and implementing your lab solution yourself.
+As a team you must write all the code you hand in, except for code that we give you as part of assignments. You are not allowed to look at other group's solution, and you are not allowed to look at existing solutions to the problem. You may discuss the assignments with other groups, but you may not look at or copy each others' code. The reason for this rule is that we believe you will learn the most by designing and implementing your lab solution yourself.
 
 > *All students* on a team are expected to contribute to the coding. When you submit your assignment you will also provide us with feedback on how evenly work was divided in your team. **Make sure that you are doing your part and not causing your teammates grief by waiting until the last minute!**
 
 Please do not publish your code or make it available to current or future students. <tt>github.com</tt> repositories are public by default, so please don't put your code there unless you make the repository private.
 
 
-
-> **A Note for Windows users:** This assignment probably <b>won't</b> work directly on Windows. If you're feeling adventurous, you can try to get them running inside [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10). Otherwise, you can use an Amazon VM and VS Code's Remote developer extension.
+> **A Note for Windows users:** This scripts used in this assignment probably <b>won't</b> work directly on Windows. If you're feeling adventurous, you can try to get them running inside [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10). Otherwise, you can use an Amazon VM and VS Code's Remote developer extension.
 
 
 ## Getting started
-
-You'll fetch the initial lab software with [git](https://git-scm.com/) (a version control system). To learn more about git, look at the [Pro Git book](https://git-scm.com/book/en/v2) or the [git user's manual](http://www.kernel.org/pub/software/scm/git/docs/user-manual.html). 
 
 We supply you with a simple sequential mapreduce implementation in <tt>src/main/mrsequential.go</tt>. It runs the maps and reduces one at a time, in a single process. We also provide you with a couple of MapReduce applications: word-count in <tt>mrapps/wc.go</tt>, and a text indexer in <tt>mrapps/indexer.go</tt>. You can run word count sequentially as follows:
 
@@ -164,7 +162,7 @@ A few rules:
     </pre>
 
 *   The map part of your worker can use the <tt>ihash(key)</tt> function (in <tt>worker.go</tt>) to pick the reduce task for a given key.
-*   You can steal some code from <tt>mrsequential.go</tt> for reading Map input files, for sorting intermedate key/value pairs between the Map and Reduce, and for storing Reduce output in files.
+*   You can copy some code from <tt>mrsequential.go</tt> for reading Map input files, for sorting intermedate key/value pairs between the Map and Reduce, and for storing Reduce output in files.
 *   The master, as an RPC server, will be concurrent; don't forget to lock shared data.
 *   Use Go's race detector, with <tt>go build -race</tt> and <tt>go run -race</tt>. <tt>main/test-mr.sh</tt> has a comment that shows you how to enable the race detector for the tests.
 *   Workers will sometimes need to wait, e.g. reduces can't start until the last map has finished. One possibility is for workers to periodically ask the master for work, sleeping with <tt>time.Sleep()</tt> between each request. Another possibility is for the relevant RPC handler in the master to have a loop that waits, either with <tt>time.Sleep()</tt> or <tt>sync.Cond</tt>. Go runs the handler for each RPC in its own thread, so the fact that one handler is waiting won't prevent the master from processing other RPCs.
@@ -173,13 +171,16 @@ A few rules:
 *   To ensure that nobody observes partially written files in the presence of crashes, the MapReduce paper mentions the trick of using a temporary file and atomically renaming it once it is completely written. You can use <tt>ioutil.TempFile</tt> to create a temporary file and <tt>os.Rename</tt> to atomically rename it.
 *   <tt>test-mr.sh</tt> runs all the processes in the sub-directory <tt>mr-tmp</tt>, so if something goes wrong and you want to look at intermediate or output files, look there.
 
-## Handin procedure
+## Submission and Grading
 
-<div class="important">
+> Make sure your code doesn’t have any extraneous outputs. We have provided an output function `DPrintf` on <tt>src/mr/common.go</tt> which you can use for your debug output while developing. Then make sure to set `debugEnabled = false` when submitting for grading to disable all prints.  
 
-<p>Before submitting, please enter lab's root directory and run <tt>make</tt> one final time.</p>
-<p>Make sure your code doesn’t have any extraneous outputs. We have provided an output function `DPrintf` on <tt>src/mr/common.go</tt>, make sure to set `debugEnabled = false` when submitting for grading.  
+Push your finalized code to github, but 
 
-</div>
+  1. Make sure your code doesn't have any extraneous outputs and matches the requirements above. Remember to remove any intermediate files and the compiled binary file. Your repository will be graded in part on its cleanliness.
+  2. Commit and Push your code, check the github interface to be sure it is there
+  3. (Optional) You can check whether your code passes our test cases on the GitHub website by going to Actions -> Autograding and then checking the `Run education/autograding@v1` test. 
+  4. (**IMPORTANT**) Go to the Issues page of your repository and create a new Issue. The title of the issue should be your full name. Add a comment that says `@HuadongHu code is ready to review`.  If any aspects of your code are incomplete or not working, you should explain which parts have a problem in your comment.
 
-<p> Push your finilized code to github, but remember to remove mr intermediate files and compiled binary file.</p>
+
+**Late Policy:** Late submissions will lose 5 points (out of 100) per 24 hour period after the deadline (i.e., submitting one hour late is -5, submitting 25 hours late is -10, etc). If you make any commits to your repository after the deadline, the submission will be considered late unless you have already coordinated this with the instructors.

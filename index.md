@@ -58,10 +58,12 @@ All deadlines are 11:59PM Eastern Time
     <a href="https://join.slack.com/t/gwdistsys20/signup">Join Slack</a> today! -- <a href="https://forms.gle/yd45FuMR7HSBJvMs9">Student Survey</a> due Monday 9/7 -- <a href="hw1/">HW1: Parallel Sum</a> due Tuesday 9/15
     </td>
     </tr>
-    <tr><td><b>Scalable Execution</b></td><td> </td>
+    <tr><td><b>Scalable Execution</b>
+    <br>9/10/2020
+    </td><td><a href="/slides/2-execution.pdf">Lecture Slides</a> and <a href="https://blackboard.gwu.edu/webapps/collab-ultra/tool/collabultra?course_id=_342915_1&amp;mode=cpview">Video</a>  </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td> 
-    <td>HW2: Map Reduce </td>
+    <td>HW2: Map Reduce due 9/29</td>
     </tr>
     <tr><td><b>Communication</b></td><td> </td>
     </tr>
