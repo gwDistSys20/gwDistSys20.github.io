@@ -28,10 +28,9 @@ layout: home
 
 
 ## Announcements ##
-- This website is under construction! More details will be added soon. Check the [Syllabus](syllabus/) for more info.
+- Check the [Syllabus](syllabus/) for more info.
 - Both sections 10 and 11 of CSCI 6421 will meet together *as one class*. You can register for either section with no difference. 
 - *We will meet online using Blackboard Collaborate Ultra*. If we have problems with Blackboard, check here or on [Slack](https://join.slack.com/t/gwdistsys20/signup) for a backup plan!
-- If for some reason you want to attend class but you are not yet officially registered, you must contact Prof. Wood before the first class.
 - The course will use the Go programming language. Get ready to code!
 
 
@@ -68,7 +67,7 @@ All deadlines are 11:59PM Eastern Time
     <tr><td><b>Communication</b></td><td> </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td> 
-    <td><a href="/readings.html">Readings in Chapters 3, 4</a> </td>
+    <td><a href="/readings.pdf">Readings in Chapters 3, 4</a> </td>
     </tr>
 </table>
 
