@@ -7,7 +7,7 @@ layout: home
     <ul class="contact-list">
         <li><a href="https://faculty.cs.gwu.edu/timwood"><b>Prof. Tim Wood</b></a></li>
         <li><a href="mailto:timwood@gwu.edu">timwood@gwu.edu</a></li>
-        <li>Office Hours: check #office-hours</li>
+        <li>Office Hours: Tuesdays 1pm, check #office-hours</li>
         <li>Section 10</li>
     </ul>
 </div>
@@ -15,7 +15,7 @@ layout: home
     <ul class="contact-list">
         <li><b>Prof. Roozbeh Haghnazar</b></li>
         <li><a href="mailto:roozbeh@gwu.edu">roozbeh@gwu.edu</a></li>
-        <li>Office Hours: check #office-hours</li>
+        <li>Office Hours: Fridays 2pm, check #office-hours</li>
         <li>Section 11</li>
     </ul>
     </div>
@@ -54,7 +54,7 @@ All deadlines are 11:59PM Eastern Time
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td>
     <td>
-    <a href="https://join.slack.com/t/gwdistsys20/signup">Join Slack</a> today! -- <a href="https://forms.gle/yd45FuMR7HSBJvMs9">Student Survey</a> due Monday 9/7 -- <a href="hw1/">HW1: Parallel Sum</a> due Tuesday 9/15
+    <a href="https://join.slack.com/t/gwdistsys20/signup">Join Slack</a> today! -- <a href="https://forms.gle/yd45FuMR7HSBJvMs9">Student Survey</a> due Monday 9/7 
     </td>
     </tr>
     <tr><td><b>Scalable Execution</b>
@@ -62,7 +62,7 @@ All deadlines are 11:59PM Eastern Time
     </td><td><a href="/slides/2-execution.pdf">Lecture Slides</a> and <a href="https://blackboard.gwu.edu/webapps/collab-ultra/tool/collabultra?course_id=_342915_1&amp;mode=cpview">Video</a>  </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td> 
-    <td><a href="/readings.html">Readings in Chapters 1, 3</a> -- HW2: Map Reduce due 9/29</td>
+    <td><a href="/readings.html">Readings in Chapters 1, 3</a> -- Watch <a href="https://gwu.box.com/s/uykp9ouz6fqc8d3psmehq46swmn7i4gm">Azure HWaaS Video</a> -- <a href="hw1/">HW1: Parallel Sum</a> due Tuesday 9/15</td>
     </tr>
     <tr><td><b>Communication</b>
     <br>9/17/2020
@@ -76,7 +76,7 @@ All deadlines are 11:59PM Eastern Time
     </td><td> </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td> 
-    <td>  </td>
+    <td> HW2: Map Reduce due 9/29 </td>
     </tr>
 </table>
 
