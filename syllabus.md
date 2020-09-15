@@ -10,8 +10,9 @@ permalink: /syllabus/
   * **Class meets Thursdays 6:10-8:40PM online**
 
 **Office Hours:**
-  * Prof. Wood: TBD
-  * Prof. Haghnazar: TBD
+  * Prof. Wood: Tuesdays 1pm-2pm
+  * Prof. Haghnazar: Fridays 2-3:30pm 
+  * Huadong Hu
 
 **Course prerequisites:**
   * CSCI 6212 Algorithms (Co-Requisite)
@@ -47,10 +48,11 @@ Students do not need to purchase a textbook for this class. The instructors may 
 | Date | Topics | Assignment(s) due |
 | :-------------: |:-------------:| :-------------:| 
 | Week 1 | Overview of Distributed Systems Challenges | |
-| Weeks 2-3 | Scalable Execution Contexts <br> Threads, Virtual Machines, Containers, Parallelism | HW1: Parallel Sum|
-| Weeks 4-5 | Communication Mechanisms <br> RPC, Sockets, HTTP, P2P | HW2: Map Reduce|
-| Weeks 6-8 | Coordination and Consensus <br> State Machine Replication, Ordering, Agreement | HW 3: DHTs; Project Milestone 1|
-| Weeks 9-10 | Reliability and Fault Tolerance <br> Consistency, Replication, Quorums | HW4: Leader Election; Midterm|
+| Week 2 | Scalable Execution Contexts <br> Threads, Virtual Machines, Containers, Parallelism | HW1: Parallel Sum|
+| Weeks 3 | Communication Mechanisms <br> RPC, Sockets, HTTP, P2P | HW2: Map Reduce|
+| Weeks 4-5 | Distributed Systems Architectures <br> Centralized vs Decentralized, Resource Management | | 
+| Weeks 6-8 | Coordination and Consensus <br> State Machine Replication, Ordering, Agreement | HW 3: Elections; Project Milestone 1|
+| Weeks 9-10 | Reliability and Fault Tolerance <br> Consistency, Replication, Quorums | HW4: DHT; Midterm|
 | Weeks 11-12 | Understanding Performance <br> Throughput, Latency, Bottlenecks, Profiling | Project Milestone 2|
 | Weeks 13-14 | Applied Distributed Systems <br> Cloud and Grid Computing | Project Milestone 3|
 |Finals Period |  | Final project due|

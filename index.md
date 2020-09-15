@@ -64,10 +64,19 @@ All deadlines are 11:59PM Eastern Time
     <tr><td style="text-align:right"><i>Tasks:</i></td> 
     <td><a href="/readings.html">Readings in Chapters 1, 3</a> -- HW2: Map Reduce due 9/29</td>
     </tr>
-    <tr><td><b>Communication</b></td><td> </td>
+    <tr><td><b>Communication</b>
+    <br>9/17/2020
+    </td><td> </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td> 
     <td><a href="/readings.pdf">Readings in Chapters 3, 4</a> </td>
+    </tr>
+    <tr><td><b>Architectures</b>
+    <br>9/24/2020
+    </td><td> </td>
+    </tr>
+    <tr><td style="text-align:right"><i>Tasks:</i></td> 
+    <td>  </td>
     </tr>
 </table>
 
