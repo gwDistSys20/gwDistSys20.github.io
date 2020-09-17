@@ -26,17 +26,33 @@ Please do not publish your code or make it available to current or future studen
 > **A Note for Windows users:** This scripts used in this assignment probably <b>won't</b> work directly on Windows. If you're feeling adventurous, you can try to get them running inside [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10). Otherwise, you can use an Amazon VM and VS Code's Remote developer extension.
 
 
+## Environment Setup
+
+Before you start coding you need to be sure your environment is configured properly. This project has a more complicated set of files than the prior assignment, so you will need some extra steps.  Go looks for files to import into your project using the $GOPATH environment variable.  For the code to work properly, you need to set the root of your repository as part of your path. We have provided a script which will do this for your terminal, but you may also need to separately configure your IDE (VS Code).  Here are the recommended steps:
+
+  - In VS Code, go to the *Code->Preferences->Settings* Menu
+    - In the search box type `gopath`
+    - Under the *Go: Gopath* setting, click *Edit in settings.json*
+    - Fill in the full path to your repo, for example: `"go.gopath": "~/20-dist-sys/hw2-mapreduce-your-team/"`
+    - Note that you can either put this in your *User settings* (affecting all VS Code projects) or your *Workspace settings* if you just want it to impact this workspace.
+    - Once you have done this, some of the errors in the code should disappear, for example opening the `mrsequential.go` file should no longer show an import error for the `mr` package and you should be able to see the definition for a type such as `mr.KeyValue` if you hover over it.
+  - If you are compiling code from the command line, you will still need to manually run our script to configure your gopath:
+    - `source setEnv.sh`
+    - Note that we provide a Makefile which will automate this process for you and run various tests.
+
 ## Getting started
 
-We supply you with a simple sequential mapreduce implementation in <tt>src/main/mrsequential.go</tt>. It runs the maps and reduces one at a time, in a single process. We also provide you with a couple of MapReduce applications: word-count in <tt>mrapps/wc.go</tt>, and a text indexer in <tt>mrapps/indexer.go</tt>. You can run word count sequentially as follows:
+We supply you with a simple sequential mapreduce implementation in <tt>src/main/mrsequential.go</tt>. It runs the maps and reduces one at a time, in a single process. We also provide you with a couple of MapReduce applications: word-count in <tt>mrapps/wc.go</tt>, and a text indexer in <tt>mrapps/indexer.go</tt>. These programs will be compiled into shared object libraries (`.so` files) which are then loaded together with your MapReduce application.
 
-<pre>$ cd mapreduce(or your own local repo's name)
-$ source ./setEnv.sh;
+For example, you can run word count sequentially as follows:
+
+<pre>$ cd hw2-mapreduce-your-team-name
+$ source ./setEnv.sh
 $ cd src/main
 $ go build -buildmode=plugin ../mrapps/wc.go
 $ rm mr-out*
 $ go run mrsequential.go wc.so pg*.txt
-$ more mr-out-0
+$ head mr-out-0
 A 509
 ABOUT 2
 ACT 8
