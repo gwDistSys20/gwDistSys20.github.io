@@ -30,7 +30,8 @@ Please do not publish your code or make it available to current or future studen
 
 We supply you with a simple sequential mapreduce implementation in <tt>src/main/mrsequential.go</tt>. It runs the maps and reduces one at a time, in a single process. We also provide you with a couple of MapReduce applications: word-count in <tt>mrapps/wc.go</tt>, and a text indexer in <tt>mrapps/indexer.go</tt>. You can run word count sequentially as follows:
 
-<pre>$ cd mapreduce
+<pre>$ cd mapreduce(or your own local repo's name)
+$ source ./setEnv.sh;
 $ cd src/main
 $ go build -buildmode=plugin ../mrapps/wc.go
 $ rm mr-out*
