@@ -197,7 +197,7 @@ Push your finalized code to github, but
   1. Make sure your code doesn't have any extraneous outputs and matches the requirements above. Remember to remove any intermediate files and the compiled binary file. You can modify .gitignore[https://git-scm.com/docs/gitignore] file to intentionally ignore these files. Your repository will be graded in part on its cleanliness. 
   2. Commit and Push your code, check the github interface to be sure it is there
   3. (Optional) You can check whether your code passes our test cases on the GitHub website by going to Actions -> Autograding and then checking the `Run education/autograding@v1` test. 
-  4. (**IMPORTANT**) Go to the Issues page of your repository and create a new Issue titled `MapReduce Submission` with the following information:`@HuadongHu @freebyron code is ready to review`.  
+  4. (**IMPORTANT**) Go to the Issues page of your repository and create a new issue titled `MapReduce Submission` with the following information:
   * Your team name and members
   * Which team members contributed which parts
   * If any aspects of your code are incomplete or not working, you should explain which parts have a problem.
