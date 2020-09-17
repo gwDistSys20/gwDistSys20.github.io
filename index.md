@@ -28,6 +28,7 @@ layout: home
 
 
 ## Announcements ##
+- If you have feedback for us, please [fill out this anonymous form!](https://forms.gle/veNaFvyrwggT2HZbA)
 - Check the [Syllabus](syllabus/) for more info.
 - Both sections 10 and 11 of CSCI 6421 will meet together *as one class*. You can register for either section with no difference. 
 - *We will meet online using Blackboard Collaborate Ultra*. If we have problems with Blackboard, check here or on [Slack](https://join.slack.com/t/gwdistsys20/signup) for a backup plan!

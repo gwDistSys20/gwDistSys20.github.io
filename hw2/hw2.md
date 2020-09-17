@@ -201,3 +201,5 @@ Push your finalized code to github, but
 
 
 **Late Policy:** Late submissions will lose 5 points (out of 100) per 24 hour period after the deadline (i.e., submitting one hour late is -5, submitting 25 hours late is -10, etc). If you make any commits to your repository after the deadline, the submission will be considered late unless you have already coordinated this with the instructors.
+
+> **Acknowledgments:** This assignment is adapted from the MIT 6.824 Distributed Systems course, which was developed by Robert Morris, Frans Kaashoek, and Nickolai Zeldovich.
