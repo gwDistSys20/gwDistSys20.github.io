@@ -12,7 +12,7 @@ permalink: /syllabus/
 **Office Hours:**
   * Prof. Wood: Tuesdays 1pm-2pm
   * Prof. Haghnazar: Fridays 2-3:30pm 
-  * Huadong Hu
+  * Huadong Hu: Monday 7pm-8pm
 
 **Course prerequisites:**
   * CSCI 6212 Algorithms (Co-Requisite)
