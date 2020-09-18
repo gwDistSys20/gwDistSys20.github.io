@@ -167,6 +167,9 @@ A few rules:
 
 ## Hints
 
+> Make sure your code doesn’t have any extraneous outputs. We have provided an output function `DPrintf` on <tt>src/mr/common.go</tt> which you can use for your debug output while developing. Then make sure to set `debugEnabled = false` when submitting for grading to disable all prints.  
+
+
 *   One way to get started is to modify <tt>mr/worker.go</tt>'s <tt>Worker()</tt> to send an RPC to the master asking for a task. Then modify the master to respond with the file name of an as-yet-unstarted map task. Then modify the worker to read that file and call the application Map function, as in <tt>mrsequential.go</tt>.
 *   The application Map and Reduce functions are loaded at run-time using the Go plugin package, from files whose names end in <tt>.so</tt>.
 *   If you change anything in the <tt>mr/</tt> directory, you will probably have to re-build any MapReduce plugins you use, with something like <tt>go build -buildmode=plugin ../mrapps/wc.go</tt>
@@ -202,8 +205,6 @@ A few rules:
 *   <tt>test-mr.sh</tt> runs all the processes in the sub-directory <tt>mr-tmp</tt>, so if something goes wrong and you want to look at intermediate or output files, look there.
 
 ## Submission and Grading
-
-> Make sure your code doesn’t have any extraneous outputs. We have provided an output function `DPrintf` on <tt>src/mr/common.go</tt> which you can use for your debug output while developing. Then make sure to set `debugEnabled = false` when submitting for grading to disable all prints.  
 
 Push your finalized code to github, but 
 
