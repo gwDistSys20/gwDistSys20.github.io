@@ -5,8 +5,8 @@ permalink: /hw2/
 ---
 
 > Deadline: Tuesday 9/29/2020
-> GitHub Repo Setup: TBD
-> This assignment must be completed in **groups of at most 4 students**. 
+> GitHub Repo Setup: [https://classroom.github.com/g/CiCW_6Vr](https://classroom.github.com/g/CiCW_6Vr)
+> This assignment must be completed in **groups of 1-4 students**. 
 
 ## Introduction
 
@@ -23,22 +23,23 @@ As a team you must write all the code you hand in, except for code that we give 
 Please do not publish your code or make it available to current or future students. <tt>github.com</tt> repositories are public by default, so please don't put your code there unless you make the repository private.
 
 
+## Environment Setup
+
 > **A Note for Windows users:** This scripts used in this assignment probably <b>won't</b> work directly on Windows. If you're feeling adventurous, you can try to get them running inside [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10). Otherwise, you can use an Amazon VM and VS Code's Remote developer extension.
 
 
-## Environment Setup
-
 Before you start coding you need to be sure your environment is configured properly. This project has a more complicated set of files than the prior assignment, so you will need some extra steps.  Go looks for files to import into your project using the $GOPATH environment variable.  For the code to work properly, you need to set the root of your repository as part of your path. We have provided a script which will do this for your terminal, but you may also need to separately configure your IDE (VS Code).  Here are the recommended steps:
+
+<img src="gopath.png" width="40%" style="float:right">
 
   - In VS Code, go to the *Code->Preferences->Settings* Menu
     - In the search box type `gopath`
-    - Under the *Go: Gopath* setting, click *Edit in settings.json*
-    - Fill in the full path to your repo, for example: `"go.gopath": "~/20-dist-sys/hw2-mapreduce-your-team/"`
-    - Note that you can either put this in your *User settings* (affecting all VS Code projects) or your *Workspace settings* if you just want it to impact this workspace.
+    - Under the *Go: Infer Gopath* click the checkbox
+    - Note that you can either put this in your *User settings* (affecting all VS Code projects, which we recommend) or your *Workspace settings* if you just want it to impact this workspace.
     - Once you have done this, some of the errors in the code should disappear, for example opening the `mrsequential.go` file should no longer show an import error for the `mr` package and you should be able to see the definition for a type such as `mr.KeyValue` if you hover over it.
-  - If you are compiling code from the command line, you will still need to manually run our script to configure your gopath:
+  - When you compile code from the command line, you will still need to manually run our script to configure your gopath:
     - `source setEnv.sh`
-    - Note that we provide a Makefile which will automate this process for you and run various tests.
+    - Note that we provide a Makefile which will automate this process for you and run various tests.  In most cases you should just use the Makefile directly.
 
 ## Getting started
 
@@ -63,11 +64,23 @@ ACT 8
 
 Feel free to borrow code from <tt>mrsequential.go</tt>. You should also have a look at <tt>mrapps/wc.go</tt> to see what MapReduce application code looks like.
 
+> **Important:** The first time you run `setEnv.sh` it will update a github configuration file (`.github/workflows/classroom.yml`).  You *must commit this updated file to your repository and include it with your submission!*
+
 ## Your Job
 
 Your job is to implement a distributed MapReduce, consisting of two programs, the master and the worker. There will be just one master process, and one or more worker processes executing in parallel. In a real system the workers would run on a bunch of different machines, but for this lab you'll run them all on a single machine. The workers will talk to the master via RPC. Each worker process will ask the master for a task, read the task's input from one or more files, execute the task, and write the task's output to one or more files. The master should notice if a worker hasn't completed its task in a reasonable amount of time (for this lab, use ten seconds), and give the same task to a different worker.
 
 We have given you a little code to start you off. The "main" routines for the master and worker are in <tt>main/mrmaster.go</tt> and <tt>main/mrworker.go</tt>; don't change these files. You should put your implementation in <tt>mr/master.go</tt>, <tt>mr/worker.go</tt>, and <tt>mr/rpc.go</tt>.
+
+To get full credit, your code will need to do the following:
+ - The master should distribute map tasks to the workers (Hint: have workers ask the master for tasks)
+ - Workers should process tasks and produce intermediate output files (Hint: be careful about how you write these files to ensure that all data with the same key will go to the same reduce task)
+ - The master should distribute reduce tasks that merge the intermediate files to produce the final outputs
+ - The master should detect the failure of map or reduce tasks and reassign them if necessary
+
+We strongly recommend you carefully read through the full list of hints below (in addition to the MapReduce paper) for more guidance.
+
+---
 
 Here's how to run your code on the word-count MapReduce application. First, make sure the word-count plugin is freshly built:
 
