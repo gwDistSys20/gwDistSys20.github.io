@@ -67,17 +67,17 @@ All deadlines are 11:59PM Eastern Time
     </tr>
     <tr><td><b>Communication</b>
     <br>9/17/2020
-    </td><td> </td>
+    </td><td><a href="/slides/3-communication.pdf">Lecture Slides</a> and <a href="https://blackboard.gwu.edu/webapps/collab-ultra/tool/collabultra?course_id=_342915_1&amp;mode=cpview">Video</a> </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td> 
-    <td><a href="/readings.pdf">Readings in Chapters 3, 4</a> </td>
+    <td><a href="/readings.pdf">Readings in Chapters 3, 4</a> -- <a href="hw2/">HW2: Map Reduce</a> due 9/29 -- Read <a href="http://research.google.com/archive/mapreduce-osdi04.pdf">MapReduce paper</a></td>
     </tr>
     <tr><td><b>Architectures</b>
     <br>9/24/2020
     </td><td> </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td> 
-    <td> HW2: Map Reduce due 9/29 </td>
+    <td> <a href="hw2/">HW2: Map Reduce</a> due 9/29 </td>
     </tr>
 </table>
 
