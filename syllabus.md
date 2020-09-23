@@ -54,7 +54,7 @@ Students do not need to purchase a textbook for this class. The instructors may 
 | Weeks 6-8 | Coordination and Consensus <br> State Machine Replication, Ordering, Agreement | HW 3: Elections; Project Milestone 1|
 | Weeks 9-10 | Reliability and Fault Tolerance <br> Consistency, Replication, Quorums | HW4: DHT; Midterm|
 | Weeks 11-12 | Understanding Performance <br> Throughput, Latency, Bottlenecks, Profiling | Project Milestone 2|
-| Weeks 13-14 | Applied Distributed Systems <br> Cloud and Grid Computing | Project Milestone 3|
+| Weeks 13-14 | Applied Distributed Systems <br> Distributed Systems Design Patterns, Cloud and Grid Computing | Project Milestone 3|
 |Finals Period |  | Final project due|
 
 

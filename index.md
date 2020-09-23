@@ -9,6 +9,8 @@ layout: home
         <li><a href="mailto:timwood@gwu.edu">timwood@gwu.edu</a></li>
         <li>Office Hours: Tuesdays 1pm, check #office-hours</li>
         <li>Section 10</li>
+        <li><i>Graders</i>: Huadong Hu and Guodong Xie</li>
+
     </ul>
 </div>
 <div class="footer-col two-col-2">
@@ -17,10 +19,10 @@ layout: home
         <li><a href="mailto:roozbeh@gwu.edu">roozbeh@gwu.edu</a></li>
         <li>Office Hours: Fridays 2pm, check #office-hours</li>
         <li>Section 11</li>
+        <li>Grader Office hours: Mondays 7pm</li>
     </ul>
     </div>
 </div></div>
-
 
 > This course will be an in-depth study of the algorithmic and implementation challenges in building large scale distributed applications. Topics include distributed coordination, scheduling, consistency issues, and fault tolerance algorithms. The course will cover how fundamental distributed systems concepts are applied to cloud computing environments. The course will mix algorithmic concepts and practical implementations; substantial programming experience is required.
 
