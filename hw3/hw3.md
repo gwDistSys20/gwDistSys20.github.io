@@ -18,12 +18,18 @@ To get up and running, execute the following commands.
 ```bash
 $ cd src/raft
 $ go test
-Test (2A): initial election ...
---- FAIL: TestInitialElection2A (5.04s)
-        config.go:326: expected one leader, got none
-Test (2A): election after network failure ...
---- FAIL: TestReElection2A (5.03s)
-        config.go:326: expected one leader, got none
+TestInitialElection: ...
+--- FAIL: TestInitialElection (4.96s)
+    config.go:334: expected one leader, got none
+TestPreviousLeaderRejoin: ...
+--- FAIL: TestPreviousLeaderRejoin (4.95s)
+    config.go:334: expected one leader, got none
+TestReElectionFail: ...
+--- FAIL: TestReElectionFail (4.97s)
+    config.go:334: expected one leader, got none
+TestReElectionSuccess: ...
+--- FAIL: TestReElectionSuccess (5.14s)
+    config.go:334: expected one leader, got none
 ...
 $
 ```
@@ -47,12 +53,12 @@ A service calls `Make(peers,me,...)` to create a Raft peer. The peers argument i
 `raft.go` contains example code that sends an RPC (`sendRequestVote()`) and that handles an incoming RPC (`RequestVote()`). Your Raft peers should exchange RPCs using the `labrpc` Go package (source in `src/labrpc`). The tester can tell `labrpc` to delay RPCs, re-order them, and discard them to simulate various network failures. While you can temporarily modify `labrpc`, make sure your Raft works with the original `labrpc`, since that's what we'll use to test and grade your lab. Your Raft instances must interact only with RPC; for example, they are not allowed to communicate using shared Go variables or files. 
 
 ## Your Task: Leader Election
-Implement Raft leader election and heartbeats (`AppendEntries` RPCs with no log entries). The goal is for a single leader to be elected, for the leader to remain the leader if there are no failures, and for a new leader to take over if the old leader fails or if packets to/from the old leader are lost. Run `go test -run 2A` to test your code. 
+Implement Raft leader election and heartbeats (`AppendEntries` RPCs with no log entries). The goal is for a single leader to be elected, for the leader to remain the leader if there are no failures, and for a new leader to take over if the old leader fails or if packets to/from the old leader are lost. 
 
 > The source code you've been provided is for an assignment that implements the full Raft protocol. We've removed many of the methods we won't use, but some are still there. You should focus on the sections of code referred to as `2A` (since this was the election phase of the original assignment).  You won't need to implement pieces referred to as `2B` or `2C`.
 
 ### Hints:
-  - You can't easily run your Raft implementation directly; instead you should run it by way of the tester, i.e. `go test -run 2A`.
+  - You can't easily run your Raft implementation directly; instead you should run it by way of the tester, i.e. `go test -run ${test_name}`(could be `TestInitialElection`, `TestPreviousLeaderRejoin`, `TestReElectionFail`, `TestReElectionSuccess`, `TestReElectionSuccess2`).
   - Follow the paper's Figure 2. At this point you care about sending and receiving RequestVote RPCs, the Rules for Servers that relate to elections, and the State related to leader election,
   - Add the Figure 2 state for leader election to the`Raft` struct in `raft.go`. You'll also need to define a struct to hold information about each log entry.
   - Fill in the `RequestVoteArgs` and `RequestVoteReply` structs. Modify `Make()` to create a background goroutine that will kick off leader election periodically by sending out `RequestVote` RPCs when it hasn't heard from another peer for a while. This way a peer will learn who is the leader, if there is already a leader, or become the leader itself. Implement the `RequestVote()` RPC handler so that servers will vote for one another.
@@ -67,18 +73,26 @@ Implement Raft leader election and heartbeats (`AppendEntries` RPCs with no log 
   - If your code has trouble passing the tests, read the paper's Figure 2 again; the full logic for leader election is spread over multiple parts of the figure.
   - Don't forget to implement `GetState()`.
   - The tester calls your Raft's `rf.Kill()` when it is permanently shutting down an instance. You can check whether `Kill()` has been called using `rf.killed()`. You may want to do this in all loops, to avoid having dead Raft instances print confusing messages.
-  - A good way to debug your code is to insert print statements when a peer sends or receives a message, and collect the output in a file with `go test -run 2A > out`. Then, by studying the trace of messages in the `out` file, you can identify where your implementation deviates from the desired protocol. You might find `DPrintf` in `util.go` useful to turn printing on and off as you debug different problems.
+  - A good way to debug your code is to insert print statements when a peer sends or receives a message, and collect the output in a file with `go test -run ${test_name} > out`. Then, by studying the trace of messages in the `out` file, you can identify where your implementation deviates from the desired protocol. You might find `DPrintf` in `util.go` useful to turn printing on and off as you debug different problems.
   - Go RPC sends only struct fields whose names start with capital letters. Sub-structures must also have capitalized field names (e.g. fields of log records in an array). The `labgob` package will warn you about this; don't ignore the warnings.
   - Check your code with `go test -race`, and fix any races it reports.
 
-Be sure you pass the 2A tests before submitting Part 2A, so that you see something like this:
+Be sure you pass the all tests before submitting, so that you see something like this:
 
 ```
-$ go test -run 2A
-Test (2A): initial election ...
-  ... Passed --   4.0  3   32    9170    0
-Test (2A): election after network failure ...
-  ... Passed --   6.1  3   70   13895    0
+$ go test
+TestInitialState: ...
+  ... Passed --   0.0  3    0       0    0
+TestInitialElection: ...
+  ... Passed --   3.1  3   88   14814    0
+TestPreviousLeaderRejoin: ...
+  ... Passed --   3.6  3   27    3912    0
+TestReElectionFail: ...
+  ... Passed --   4.5  3   35    3714    0
+TestReElectionSuccess: ...
+  ... Passed --   5.5  3   51    6510    0
+TestReElectionSuccess2: ...
+  ... Passed --   7.7  5  179   22214    0
 PASS
 ok      raft    10.187s
 $
