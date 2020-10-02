@@ -4,7 +4,7 @@ title: "HW 3: Leader Election"
 permalink: /hw3/
 ---
 
-> This assignment is being updated...
+> **Acknowledgments:** This assignment is adapted from the MIT 6.824 Distributed Systems course, which was developed by Robert Morris, Frans Kaashoek, and Nickolai Zeldovich.
 
 **Note:** You can complete this assignment in a group of 1-4 students.
 
@@ -101,10 +101,16 @@ $
 Each "Passed" line contains five numbers; these are the time that the test took in seconds, the number of Raft peers (usually 3 or 5), the number of RPCs sent during the test, the total number of bytes in the RPC messages, and the number of log entries that Raft reports were committed. Your numbers will differ from those shown here. You can ignore the numbers if you like, but they may help you sanity-check the number of RPCs that your implementation sends. The grading script will fail your solution if it takes more than 600 seconds for all of the tests (`go test`), or if any individual test takes more than 120 seconds. 
 
 ## Submission
-To submit your code, you should merge all your changes to `master` so that the master branch contains the final product. Please create an issue on your repo titled *Submission* with the following information:
 
-  - Your team name and members
-  - Which team members contributed which parts
+Push your finalized code to github, but 
 
-Then tag us in the issue using our github usernames(`@twood02` and `@thelimeburner`).
+  1. Make sure your code doesn't have any extraneous outputs and matches the requirements above. Remember to remove any intermediate files and the compiled binary file. You can modify [.gitignore](https://git-scm.com/docs/gitignore) file to intentionally ignore these files. Your repository will be graded in part on its cleanliness. 
+  2. Commit and Push your code, check the github interface to be sure it is there
+  3. (**IMPORTANT**) Go to the Issues page of your repository and create a new issue titled `Raft Submission` with the following information:
+  * Your team name and members
+  * Which team members contributed which parts
+  * If any aspects of your code are incomplete or not working, you should explain which parts have a problem.
+  * Then tag the graders in the issue using their github usernames (`@HuadongHu and @freebyron`).
 
+
+**Late Policy:** Late submissions will lose 5 points (out of 100) per 24 hour period after the deadline (i.e., submitting one hour late is -5, submitting 25 hours late is -10, etc). If you make any commits to your repository after the deadline, the submission will be considered late unless you have already coordinated this with the instructors.
