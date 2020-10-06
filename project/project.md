@@ -55,7 +55,7 @@ We will not permit two groups to work on the same project idea. Precedence will 
 These project ideas focus on implementing a simplified version of a distributed system "from scratch". Designing and building a full system like this is a lot of work, so you will need to limit your scope to a specific set of distributed systems problems.
 
 *Distributed Database from Scratch*: Implement a basic distributed database. You should not spend a lot of effort on the database query engine (perhaps you can just reuse something simple like SQLite) and instead should focus on challenges such as supporting consistency and fault tolerance.
-  - Similar ideas: Distributed Hash table
+  - Similar ideas: Build a Distributed Hash Table like Chord or implement a simulation of a large scale P2P file sharing system.
 
 *Serverless Platform from Scratch*: Implement a simplified Serverless / Function as a Service platform. A serverless platform dynamically starts and stops containers or VMs as requests arrive. The basic components include a gateway load balancer, a queueing system that can buffer requests, and an autoscaler that decides when to add or remove nodes.
 
