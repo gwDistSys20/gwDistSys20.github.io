@@ -72,21 +72,21 @@ All deadlines are 11:59PM Eastern Time
     </td><td><a href="/slides/3-communication.pdf">Lecture Slides</a> and <a href="https://blackboard.gwu.edu/webapps/collab-ultra/tool/collabultra?course_id=_342915_1&amp;mode=cpview">Video</a> </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td> 
-    <td><a href="/readings.pdf">Readings in Chapters 3, 4</a> -- <a href="hw2/">HW2: Map Reduce</a> due 10/1 -- Read <a href="http://research.google.com/archive/mapreduce-osdi04.pdf">MapReduce paper</a></td>
+    <td><a href="/readings.pdf">Readings in Chapters 3, 4</a> -- Read <a href="http://research.google.com/archive/mapreduce-osdi04.pdf">MapReduce paper</a></td>
     </tr>
     <tr><td><b>Architectures</b>
     <br>9/24/2020
     </td><td><a href="/slides/4-architecture.pdf">Lecture Slides</a> and <a href="https://blackboard.gwu.edu/webapps/collab-ultra/tool/collabultra?course_id=_342915_1&amp;mode=cpview">Video</a>  </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td> 
-    <td> <a href="/readings.pdf">Readings in Chapter 2</a>  -- <a href="hw2/">HW2: Map Reduce</a> due 10/1 </td>
+    <td> <a href="/readings.pdf">Readings in Chapter 2</a>  </td>
     </tr>
     <tr><td><b>Resource Management</b>
     <br>10/1/2020
     </td><td><a href="/slides/5-resources.pdf">Lecture Slides</a> and <a href="https://blackboard.gwu.edu/webapps/collab-ultra/tool/collabultra?course_id=_342915_1&amp;mode=cpview">Video</a>  </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td> 
-    <td> <a href="hw2/">HW2: Map Reduce</a> due 10/1, -10 points for 10/8 </td>
+    <td> <a href="hw2/">HW2: Map Reduce</a> due 10/1, -10 points by 10/8 -- <a href="https://youtu.be/ZcaQ7yLAYwM">MapReduce Help Video</a> -- <a href="https://forms.gle/bCMJnDwNzhDudEGo6">Partner Feedback Form</a> </td>
     </tr>
 </table>
 
