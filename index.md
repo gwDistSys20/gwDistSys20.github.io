@@ -30,6 +30,7 @@ layout: home
 
 
 ## Announcements ##
+- The [Final Project](/project/) Milestone 0-1 details have been announced.
 - If you have feedback for us, please [fill out this anonymous form!](https://forms.gle/veNaFvyrwggT2HZbA)
 - Check the [Syllabus](syllabus/) for more info.
 - Both sections 10 and 11 of CSCI 6421 will meet together *as one class*. You can register for either section with no difference. 

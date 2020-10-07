@@ -8,7 +8,7 @@ For your final project you will investigate a research challenge in distributed 
 
 **Research Focused:** Your group must pick a problem under active research, read papers in the area, and implement a solution to the problem. Your solution can be a re-implementation of an existing research project or a combination/extension of current approaches.  You will need to build and evaluate the performance of your system to compare it against prior research. If your focus is more algorithmic, you may want to build a simulator instead of a real platform so you have better control over the environment.
 
-**Implementation Focused:** Your group must build a simplified version of an existing distributed system. You still will need to read research papers about the system you are implementing, but your effort will be focused more on implementing the system and less on evaluating and comparing it other proposed approaches.
+**Implementation Focused:** Your group must build a simplified version of an existing distributed system. You still will need to read research papers about the system you are implementing, but your effort will be focused more on implementing the system and less on evaluating and comparing it against other proposed approaches.
 
 You have about two months to complete the project so it should be more significant than a standard programming assignment, while still being feasible to complete within that time frame. The project will be broken into milestones.
 
