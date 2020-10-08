@@ -52,11 +52,16 @@ We will not permit two groups to work on the same project idea. Precedence will 
 *Load Balancing*: Evaluate the performance of different load balancing algorithms under a variety of workloads and server conditions. To evaluate load balancing approaches at large scale, you could build a simulator to test the performance of different algorithms. You should focus on a particular challenge, for example reproducing the load balancing algorithm in Prof. Wood's [NetKV (ICAC 16)](http://faculty.cs.gwu.edu/~timwood/papers/16-ICAC-netkv.pdf) project which dealt with skewed workloads arriving at a memcached cluster.
   - Similar ideas: Task scheduling in Map Reduce; website load balancing; etc
 
+*Optimization/Metaheuristics:* Simulate and compare some metaheuristic or ML algorithms for Scheduling or placement considering several features such as workload, deadlines, priority, CPU/Memory cost, etc For example comparing [MOPSO](https://ieeexplore.ieee.org/abstract/document/1004388?casa_token=9uwi8j8GQS0AAAAA:HQvRpbNHwcqM6RXc1HsDxf0B8nLEjHiaGeGGaXdzreW4lC0PLWj_Exut4RBgMM_x8rJdJbJW3g), [NSGAIII](https://ieeexplore.ieee.org/abstract/document/6600851?casa_token=zR3Pu0_hBTkAAAAA:T-xDwh1Qm3H5Uic8ZgPktwocEuKxA0_EpB2anpy_a_Um890mSTySi8Ois3sTkowTbjcjkqSD4A), Neural Networks, Clustering or Classification based approaches.
+
 *Consensus*: Consensus algorithms allow multiple nodes in a distributed system to reach agreement about a decision even if some nodes can fail. For example, [Raft (Usenix ATC 14)](http://nil.csail.mit.edu/6.824/2020/papers/raft-extended.pdf) provides an algorithm for ordering requests when nodes can crash or become disconnected. You could either implement Raft from scratch, or extend the official implementation in some way.
   - Similar ideas: Byzantine Fault Tolerance to handle arbitrary failures and malicious nodes
 
 *Container Migration*: Virtual machine migration is a popular tool for managing data centers, yet container migration has not reached the same level of maturity. You could explore container migration approaches based on CRIU such as [Voyager (ICDCS 17)](https://ieeexplore.ieee.org/abstract/document/7980161) and evaluate how they perform in different environments.
   - Similar ideas: Optimizing container or VM migration by eliminating redundant data transfers; resource management algorithms to decide when to migrate or which host to migrate to
+
+*P2P Simulation*: Implement a simulator that mimics the behavior of a large P2P system such as bittorrent, gnutella, or bitcoin. Evaluate different algorithms for finding content or sending data in the network.
+
 
 ### Sample Project Ideas - Implementation Focused
 These project ideas focus on implementing a simplified version of a distributed system "from scratch". Designing and building a full system like this is a lot of work, so you will need to limit your scope to a specific set of distributed systems problems.
@@ -67,6 +72,7 @@ These project ideas focus on implementing a simplified version of a distributed 
 *Serverless Platform from Scratch*: Implement a simplified Serverless / Function as a Service platform. A serverless platform dynamically starts and stops containers or VMs as requests arrive. The basic components include a gateway load balancer, a queueing system that can buffer requests, and an autoscaler that decides when to add or remove nodes.
 
 *RPC from Scratch*: Implement your own RPC library. Your version of RPC could explore interesting distributed systems challenges like fault tolerance or scalability. For example, your RPC library could automatically load balance calls across several servers, or detect a server failure and reissue a request to a backup replica.
+
 
 ### Bad Project Ideas
 Projects like the following will not be approved:
