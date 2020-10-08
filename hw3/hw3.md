@@ -4,14 +4,16 @@ title: "HW 3: Leader Election"
 permalink: /hw3/
 ---
 
-> **Acknowledgments:** This assignment is adapted from the MIT 6.824 Distributed Systems course, which was developed by Robert Morris, Frans Kaashoek, and Nickolai Zeldovich.
+> Deadline: Thursday 12/10/2020 - far in the future, but you will be busy with your Final Project, so start soon!
+>
+> GitHub Repo Setup: [https://classroom.github.com/g/iWrPYTjH](https://classroom.github.com/g/iWrPYTjH)
+> This assignment must be completed in **groups of 1-4 students**. You are encouraged to solve it with your Final Project group, but that is not required.
 
-**Note:** You can complete this assignment in a group of 1-4 students.
+In this project you will implement a Leader Election algorithm in Go. Your algorithm must be based on the protocol defined in the Raft Consensus system, which is able to handle crash failures of leaders and other nodes in the system.  Raft's leader election is based on the Bully Algorithm covered in class, and uses the idea of terms and randomized timers to trigger elections. The [Raft paper](raft-extended.pdf) gives a detailed explanation of its algorithms, although you only really need to understand the Election portion. Hint: Figure 2 is very helpful, but you will need to separate out the parts about creating log entries (which we don't care about) vs heartbeats and elections (which you must implement).
 
-This project is adapted from [MIT's 6.824 course](https://pdos.csail.mit.edu/6.824/index.html). Their assignment includes the full Raft protocol, but we will only do the first stage which focuses on leader election. You must implement the functions necessary to allow a candidate node to start an election and receive votes from other nodes. An elected leader should send heartbeat messages to remain leader, and if it fails, then a new election should begin.
+The project is adapted from MIT's 6.824 Distributed Systems course. Their assignment includes the full Raft Consensus protocol, but we will only do the first stage which focuses on leader election. You must implement the functions necessary to allow a candidate node to start an election and receive votes from other nodes. An elected leader should send heartbeat messages to remain leader, and if it fails, then a new election should begin.
 
-
-We supply you with skeleton code `src/raft/raft.go`. We also supply a set of tests, which you should use to drive your implementation efforts, and which we'll use to grade your submitted lab. The tests are in `src/raft/test_test.go`.
+We supply you with skeleton code `src/raft/raft.go`. We also supply a set of tests, which you should use to drive your implementation efforts, and which we'll use to grade your submitted lab. The tests are in `src/raft/test_test.go`. The starter code also includes a special RPC library which gives us support to cause arbitrary failures of nodes during a test. You must use this library (it has the same basic interface to what we've used before).
 
 To get up and running, execute the following commands. 
 
@@ -33,9 +35,10 @@ TestReElectionSuccess: ...
 ...
 $
 ```
+This output shows that the starter code is working, but that it can't yet elect any leaders.
 
 ## The code
-Implement Raft by adding code to `raft/raft.go`. In that file you'll find skeleton code, plus examples of how to send and receive RPCs.
+You must implement Raft's Leader Election by adding code to `raft/raft.go`. In that file you'll find skeleton code, plus examples of how to send and receive RPCs.
 
 Your implementation must support the following interface, although some of these functions will not be used for the Election phase. You'll find more details in comments in `raft.go`. 
 
@@ -60,16 +63,16 @@ Implement Raft leader election and heartbeats (`AppendEntries` RPCs with no log 
 ### Hints:
   - You can't easily run your Raft implementation directly; instead you should run it by way of the tester, i.e. `go test -run ${test_name}`(could be `TestInitialElection`, `TestPreviousLeaderRejoin`, `TestReElectionFail`, `TestReElectionSuccess`, `TestReElectionSuccess2`).
   - Follow the paper's Figure 2. At this point you care about sending and receiving RequestVote RPCs, the Rules for Servers that relate to elections, and the State related to leader election,
-  - Add the Figure 2 state for leader election to the`Raft` struct in `raft.go`. You'll also need to define a struct to hold information about each log entry.
+  - Add the Figure 2 state for leader election to the`Raft` struct in `raft.go`. 
   - Fill in the `RequestVoteArgs` and `RequestVoteReply` structs. Modify `Make()` to create a background goroutine that will kick off leader election periodically by sending out `RequestVote` RPCs when it hasn't heard from another peer for a while. This way a peer will learn who is the leader, if there is already a leader, or become the leader itself. Implement the `RequestVote()` RPC handler so that servers will vote for one another.
-  - To implement heartbeats, define an `AppendEntries` RPC struct (though you may not need all the arguments yet), and have the leader send them out periodically. Write an `AppendEntries` RPC handler method that resets the election timeout so that other servers don't step forward as leaders when one has already been elected.
+  - To implement heartbeats, define an `AppendEntries` RPC struct (though you may not need all the arguments defined in the paper), and have the leader send them out periodically. Write an `AppendEntries` RPC handler method that resets the election timeout so that other servers don't step forward as leaders when one has already been elected.
   - Make sure the election timeouts in different peers don't always fire at the same time, or else all peers will vote only for themselves and no one will become the leader.
   - The tester requires that the leader send heartbeat RPCs no more than ten times per second.
   - The tester requires your Raft to elect a new leader within five seconds of the failure of the old leader (if a majority of peers can still communicate). Remember, however, that leader election may require multiple rounds in case of a split vote (which can happen if packets are lost or if candidates unluckily choose the same random backoff times). You must pick election timeouts (and thus heartbeat intervals) that are short enough that it's very likely that an election will complete in less than five seconds even if it requires multiple rounds.
   - The paper's Section 5.2 mentions election timeouts in the range of 150 to 300 milliseconds. Such a range only makes sense if the leader sends heartbeats considerably more often than once per 150 milliseconds. Because the tester limits you to 10 heartbeats per second, you will have to use an election timeout larger than the paper's 150 to 300 milliseconds, but not too large, because then you may fail to elect a leader within five seconds.
   - You may find Go's [rand](https://golang.org/pkg/math/rand/) useful.
   - You'll need to write code that takes actions periodically or after delays in time. The easiest way to do this is to create a goroutine with a loop that calls [time.Sleep()](https://golang.org/pkg/time/#Sleep). Don't use Go's `time.Timer` or `time.Ticker`, which are difficult to use correctly.
-  - Read this advice about [locking](https://pdos.csail.mit.edu/6.824/labs/raft-locking.txt) and [structure](https://pdos.csail.mit.edu/6.824/labs/raft-structure.txt).
+  - Read this advice (from MIT) about [locking](raft-locking.txt) and [structure](raft-structure.txt).
   - If your code has trouble passing the tests, read the paper's Figure 2 again; the full logic for leader election is spread over multiple parts of the figure.
   - Don't forget to implement `GetState()`.
   - The tester calls your Raft's `rf.Kill()` when it is permanently shutting down an instance. You can check whether `Kill()` has been called using `rf.killed()`. You may want to do this in all loops, to avoid having dead Raft instances print confusing messages.
@@ -102,15 +105,18 @@ Each "Passed" line contains five numbers; these are the time that the test took 
 
 ## Submission
 
-Push your finalized code to github, but 
+Push your finalized code to github when you finish and: 
 
   1. Make sure your code doesn't have any extraneous outputs and matches the requirements above. Remember to remove any intermediate files and the compiled binary file. You can modify [.gitignore](https://git-scm.com/docs/gitignore) file to intentionally ignore these files. Your repository will be graded in part on its cleanliness. 
   2. Commit and Push your code, check the github interface to be sure it is there
   3. (**IMPORTANT**) Go to the Issues page of your repository and create a new issue titled `Raft Submission` with the following information:
   * Your team name and members
-  * Which team members contributed which parts
   * If any aspects of your code are incomplete or not working, you should explain which parts have a problem.
   * Then tag the graders in the issue using their github usernames (`@HuadongHu and @freebyron`).
 
+**Important:** As with all assignments, it is an academic integrity violation to share your code with other students or to get a solution (full or partial) from another source. Since teams may be submitting their code at different times, it is extra important to keep your code to yourself!
+
 
 **Late Policy:** Late submissions will lose 5 points (out of 100) per 24 hour period after the deadline (i.e., submitting one hour late is -5, submitting 25 hours late is -10, etc). If you make any commits to your repository after the deadline, the submission will be considered late unless you have already coordinated this with the instructors.
+
+> **Acknowledgments:** This assignment is adapted from the MIT 6.824 Distributed Systems course, which was developed by Robert Morris, Frans Kaashoek, and Nickolai Zeldovich.
