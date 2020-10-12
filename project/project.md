@@ -51,7 +51,7 @@ For this milestone you will need to submit a 1-2 page report that answers the fo
 We will not permit two groups to work on the same project idea. Precedence will be given to whichever group submits their proposal first. Your project proposal for Milestone 1 must be approved by the professors before you can submit the following assignments! If you submit early we will try to approve your project early.
 
 **Submission Instructions:**
-  - Your writeup must be in Markdown format and saved in the file `milestone-1/README.md` 
+  - Your writeup must be in [Markdown format](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and saved in the file `milestone-1/README.md` 
   - Create an issue with title `Milestone 1 - TEAM NAME` and the body should have a link to your report file.
   - Click the button on the top right side of the Issue view to *Assign* the issue to both professors
 
