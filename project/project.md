@@ -29,6 +29,12 @@ You must form a team of 3-4 students. We suggest teams have 4 members if possibl
 
 When you form a team you do not yet need to have selected a project idea, however it is best if you decide an area (or areas) you want to work in and be sure all team members agree. See the sample projects under Milestone 1 for more details.
 
+**Submission Instructions:**
+  - First, pick a team name. Your team name *must* be that of a famous scientist, e.g., `Galileo` or `MarieCurie`. Pick someone interesting or inspiring.
+  - The team leader should [create the team repository using GitHub Classrooms](https://classroom.github.com/g/B99Tq4-9), entering the chosen team name. Make sure that nobody else has already picked your name!  Other team members should then join the team. *It is hard for us to delete teams or move people between them, so be careful and don't join the wrong team! We may deduct points if you cause us extra work.*
+  - Fill in the `README.md` file in the repository with your team members, team name, and optionally a brief description of the project idea(s) you are considering
+  - Create an Issue in your repository once your readme is complete. The title of the issue should be `Milestone 0 - TEAM NAME` (with your team name filled in). The body of the issue should list the team member names with leader first.
+
 ---
 
 ## Milestone 1: Select a topic 
