@@ -41,7 +41,7 @@ When you form a team you do not yet need to have selected a project idea, howeve
  
  - Due 10/19 - earlier if possible
 
-> We strongly encourage you to complete Milestones 0 and 1 early. If you submit Milestone 1 at least 5 days early you will receive a 5 point bonus to your report grade.
+> We strongly encourage you to complete Milestones 0 and 1 early. If you submit Milestone 1 at least 4 days early you will receive a 5 point bonus to your report grade.
 
 For this milestone you will need to submit a 1-2 page report that answers the following questions:
   - What is the topic area of the project? (see examples below)
