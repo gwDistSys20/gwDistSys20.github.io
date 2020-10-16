@@ -103,7 +103,7 @@ All deadlines are 11:59PM Eastern Time
     <tr><th style="text-align:center" colspan="2">Part 2: Principles of Distributed Systems</th></tr>
     </thead>
     <tr><td style="width:20%"><b>Clocks and Timing</b>
-    <br>9/3/2020
+    <br>10/15/2020
     </td><td>
     <a href="/slides/7-coordination-notes.pdf">Lecture Slides</a> and <a href="https://blackboard.gwu.edu/webapps/collab-ultra/tool/collabultra?course_id=_342915_1&amp;mode=cpview">Video</a> <br>
     </td>
