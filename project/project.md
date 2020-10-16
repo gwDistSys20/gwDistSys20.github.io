@@ -44,9 +44,11 @@ When you form a team you do not yet need to have selected a project idea, howeve
 > We strongly encourage you to complete Milestones 0 and 1 early. If you submit Milestone 1 at least 4 days early you will receive a 5 point bonus to your report grade.
 
 For this milestone you will need to submit a 1-2 page report that answers the following questions:
-  - What is the topic area of the project? (see examples below)
-  - What are the main distributed systems challenges you will face?
+  - What is the topic area of the project? Why is it important and what specifically will you build or design?
+  - What are the main distributed systems challenges you will face? (see our slides for the list of distributed systems challenges)
   - What are some sample papers (at least 4) that will guide your work?
+
+All of your milestone reports will be judged partially on how well they are written, so write complete sentences/paragraphs, not just a bulleted list!
 
 We will not permit two groups to work on the same project idea. Precedence will be given to whichever group submits their proposal first. Your project proposal for Milestone 1 must be approved by the professors before you can submit the following assignments! If you submit early we will try to approve your project early.
 
