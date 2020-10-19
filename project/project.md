@@ -97,7 +97,7 @@ Projects like the following will not be approved:
 
 ## Milestone 2: Literature Review
 
-> A literature review surveys books, scholarly articles, and other sources relevant to a particular issue, area of research, or theory, and by so doing, provides a description, summary, and critical evaluation of these works in relation to the research problem being investigated. Literature reviews are designed to provide an overview of sources you have explored while researching a particular topic and to demonstrate to your readers how your research fits within a larger field of study.
+> "A literature review surveys books, scholarly articles, and other sources relevant to a particular issue, area of research, or theory, and by so doing, provides a description, summary, and critical evaluation of these works in relation to the research problem being investigated. Literature reviews are designed to provide an overview of sources you have explored while researching a particular topic and to demonstrate to your readers how your research fits within a larger field of study."
 >
 > -- Fink, Arlene. Conducting Research Literature Reviews: From the Internet to Paper. Fourth edition. Thousand Oaks, CA: SAGE, 2014. See [this article](https://libguides.usc.edu/writingguide/literaturereview) for more information on writing a literature review. 
 
@@ -109,6 +109,7 @@ For Milestone 2 you must perform a Literature Review which *summarizes and synth
   - In general, we prefer you to use research articles such as those from conferences or journals published by ACM, IEEE, or Usenix, since they have more depth and are peer-reviewed (and thus more likely to be accurate) than random webpages.
   - At most half of your articles (preferably less) may be technical "blogs" or other articles found online. However, these should be thorough, in-depth articles, not just how-to documents or news articles designed for everyday readers. For example, this article on [game network coding and performance](https://technology.riotgames.com/news/peeking-valorants-netcode) is a good choice, but this article on [cloud gaming and 5G](https://www.forbes.com/sites/forbestechcouncil/2020/04/21/cloud-gaming-is-booming-but-is-the-network-ready/#200f40303d97) would be a bad choice since it lacks technical depth. If you think someone *without* a CS background could easily understand the article, then it is probably a bad choice since it will not have sufficient technical detail to teach you anything.
   - Your articles should be recent. It is fine to have some "fundamental" papers from prior decades, but be sure to also include some recent work that accounts for the state of the art in the area.
+  - You may find it useful to look at [ACM Computing Surveys](https://dl.acm.org/journal/csur), a journal that publishes literature reviews in many CS areas. You might find one related to your topic and it will give you an idea of what an in-depth literature review looks like (yours will be much shorter).
 
 **Report Structure**: Below is a suggested structure for your paper. You may use something different but must cover all these points.
 
