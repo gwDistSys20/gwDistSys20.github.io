@@ -111,7 +111,12 @@ All deadlines are 11:59PM Eastern Time
     <tr><td style="text-align:right"><i>Tasks:</i></td>
     <td><a href="/readings.pdf">Readings in Chapter 6</a> -- <a href="/project/#milestone-1-select-a-topic">Milestone 1: Select a Topic</a> - 10/19</td>
     </tr>
-    <tr><td><b>Distributed Coordination</b></td><td> </td>
+    <tr><td><b>Distributed Coordination</b>
+    <br>10/22/2020
+    </td><td> </td>
+    </tr>
+    <tr><td style="text-align:right"><i>Tasks:</i></td>
+    <td><a href="/readings.pdf">Readings in Chapter 6</a> -- <a href="/project/#milestone-2-literature-review">Milestone 2: Literature Review</a> - 10/29</td>
     </tr>
     <tr><td><b>Fault Tolerance</b></td><td> </td>
     </tr>
