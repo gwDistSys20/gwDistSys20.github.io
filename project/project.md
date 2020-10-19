@@ -99,7 +99,7 @@ Projects like the following will not be approved:
 
 > A literature review surveys books, scholarly articles, and other sources relevant to a particular issue, area of research, or theory, and by so doing, provides a description, summary, and critical evaluation of these works in relation to the research problem being investigated. Literature reviews are designed to provide an overview of sources you have explored while researching a particular topic and to demonstrate to your readers how your research fits within a larger field of study.
 >
-> -- Fink, Arlene. Conducting Research Literature Reviews: From the Internet to Paper. Fourth edition. Thousand Oaks, CA: SAGE, 2014.
+> -- Fink, Arlene. Conducting Research Literature Reviews: From the Internet to Paper. Fourth edition. Thousand Oaks, CA: SAGE, 2014. See [this article](https://libguides.usc.edu/writingguide/literaturereview) for more information on writing a literature review. 
 
 For Milestone 2 you must perform a Literature Review which *summarizes and synthesizes* information from key sources related to your project. You will present the importance of the project area, motivate the difficulty of the key challenges, and describe the state of the art in resolving them.
 
