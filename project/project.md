@@ -15,7 +15,7 @@ You have about two months to complete the project so it should be more significa
 **Due Dates:**
   - [Milestone 0: Form a Team](#milestone-0-form-a-team) - 10/12
   - [Milestone 1: Select a Topic](#milestone-1-select-a-topic) - 10/19
-  - Milestone 2: Literature Survey - 10/29
+  - [Milestone 2: Literature Survey](#milestone-2-literature-review) - 10/29
   - Milestone 3: Design Document - 11/5
   - Milestone 4: Final Presentation - 12/14
 
@@ -92,3 +92,38 @@ Projects like the following will not be approved:
 
   - Building a web application that combines several cloud services (e.g., a meeting room reservation system). This is a distributed system, but we want you to focus on the underlying concepts, not an application.
   - Taking code from an existing research project and measuring its performance.  If code exists, you will be expected to modify / extend it in some way.  If no code is available, then it is acceptable to try to directly mimic an existing project.
+
+---
+
+## Milestone 2: Literature Review
+
+> A literature review surveys books, scholarly articles, and other sources relevant to a particular issue, area of research, or theory, and by so doing, provides a description, summary, and critical evaluation of these works in relation to the research problem being investigated. Literature reviews are designed to provide an overview of sources you have explored while researching a particular topic and to demonstrate to your readers how your research fits within a larger field of study.
+>
+> -- Fink, Arlene. Conducting Research Literature Reviews: From the Internet to Paper. Fourth edition. Thousand Oaks, CA: SAGE, 2014.
+
+For Milestone 2 you must perform a Literature Review which *summarizes and synthesizes* information from key sources related to your project. You will present the importance of the project area, motivate the difficulty of the key challenges, and describe the state of the art in resolving them.
+
+**Article Selection**:  You must present information from *at least 6 articles for 3 person teams* or *at least 8 articles for 4 person teams*.
+
+  - Use a tool like [Google Scholar](https://scholar.google.com) to find articles related to your topic area. Note that you may need to be on the [GW VPN](https://seascf.seas.gwu.edu/vpn-access) in order to access research article PDFs.
+  - In general, we prefer you to use research articles such as those from conferences or journals published by ACM, IEEE, or Usenix, since they have more depth and are peer-reviewed (and thus more likely to be accurate) than random webpages.
+  - At most half of your articles (preferably less) may be technical "blogs" or other articles found online. However, these should be thorough, in-depth articles, not just how-to documents or news articles designed for everyday readers. For example, this article on [game network coding and performance](https://technology.riotgames.com/news/peeking-valorants-netcode) is a good choice, but this article on [cloud gaming and 5G](https://www.forbes.com/sites/forbestechcouncil/2020/04/21/cloud-gaming-is-booming-but-is-the-network-ready/#200f40303d97) would be a bad choice since it lacks technical depth. If you think someone *without* a CS background could easily understand the article, then it is probably a bad choice since it will not have sufficient technical detail to teach you anything.
+  - Your articles should be recent. It is fine to have some "fundamental" papers from prior decades, but be sure to also include some recent work that accounts for the state of the art in the area.
+
+**Report Structure**: Below is a suggested structure for your paper. You may use something different but must cover all these points.
+
+ - Introduction: Give the background for your proposed project and the importance of resolving it. Refer to your articles to provide motivational data or use cases that show why this is something useful and important. (~0.75 page)
+ - Challenges: Describe the key distributed systems challenges related to your project. Use the terminology defined in our class (scalability, heterogeneity, etc) and show how they can impact your project. Focus on the problems presented by the related work or any challenges which you feel the articles fail to address sufficiently. (~1 page)
+ - Approaches: Summarize the designs and algorithms proposed by related work. Try to categorize them so that you group different types of approaches together in a way that adds meaning. (~1.5 pages)
+ - Project Proposal: Very briefly outline how your project relates to the problems and solutions described above. For example, you could explain how you are focusing on a specific sub-problem or extending an existing piece of work. This section can be short: 1-2 paragraphs at most.
+
+**Format and Submission:** Your report should be *2-4 pages long* and follow these guidelines.
+
+ - As with all writing, *it is **never acceptable** to copy/paste from another author*. All of your writing must be your own! If we find any sentences copy/pasted from another source (unless it is a direct quote), we may deduct 10-50 points.
+ - Your document must be submitted as PDF and should be in the form of a technical article. You may want to use a document template, [such as those provided by ACM](https://www.acm.org/publications/authors/submissions), in Word or Latex format.
+   - We suggest single column, justified text, size 10 font, 1.25x line spacing, or similar.
+   - If you use Latex (not required), we encourage you to use a service like [Overleaf](http://overleaf.com) to simplify collaboration and generation of the document. 
+ - Your writing must include citations where appropriate using a style such as `[Wood18]` to cite a paper by Wood et al in 2018.
+ - Save your document as `milestone-2/literature.pdf` and create an issue with a link to the document assigned to the professors when you are ready to submit. While not required, we suggest storing copies of all the related articles you surveyed into your repository.
+
+The output of this report will be the fundamental basis of the next Milestone. For your next Design report, you need to make a decision about the solution you will develop for your problem according to the pros and cons of the studies cited in your literature review. Your solution can be chosen among the cited studies or it can be a combination of them, or you might propose your own solution and method to address the issues in your problem space. But the important point is that your proposed method should be based on an understanding of what others have done in the field. For the Literature Review Milestone you only need to give a basic outline of your plan, which you will then fully develop in Milestone 3.
