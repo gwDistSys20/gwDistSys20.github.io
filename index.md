@@ -116,22 +116,41 @@ All deadlines are 11:59PM Eastern Time
     </td><td> </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td>
-    <td><a href="/readings.pdf">Readings in Chapter 6</a> -- <a href="/project/#milestone-2-literature-review">Milestone 2: Literature Review</a> - 10/29</td>
+    <td><a href="/readings.pdf">Readings in Chapter 6</a> </td>
     </tr>
-    <tr><td><b>Fault Tolerance</b></td><td> </td>
+    <tr><td><b>Replication</b><br>10/29/2020</td>
+    <td> </td>
     </tr>
-    <tr><td><b>Performance</b></td><td> </td>
+    <tr><td style="text-align:right"><i>Tasks:</i></td>
+    <td><a href="/readings.pdf">Readings in Chapter 7</a> -- <a href="/project/#milestone-2-literature-review">Milestone 2: Literature Review</a> - 10/29</td>
     </tr>
+    <tr><td><b>Fault Tolerance</b><br>11/5/2020</td>
+    <td> </td>
+    </tr>
+    <tr><td style="text-align:right"><i>Tasks:</i></td>
+    <td><a href="/readings.pdf">Readings in Chapter 8</a> -- <a href="/project/#milestone-3-design-document">Milestone 3: Design Document</a> - 11/5</td>
+    </tr>
+    <tr><td><b>Midterm Exam</b><br>11/12/2020</td>
+    <td>Practice problems will be provided </td>
+    </tr>
+    <tr><td style="text-align:right"><i>Tasks:</i></td><td>Study!</td></tr>
 </table>
 
 <table>
     <thead>
     <tr><th style="text-align:center" colspan="2">Part 3: Distributed Systems in Practice</th></tr>
     </thead>
-    <tr><td style="width:20%"><b>Cloud Computing</b></td><td> </td>
+    <tr><td style="width:20%"><b>Cloud Computing</b><br>11/19/2020</td><td> </td>
     </tr>
-    <tr><td><b>Grid Computing</b></td><td> </td>
+    <tr><td style="text-align:right"><i>Tasks:</i></td><td> </td></tr>
+    <tr><td><b>Grid Computing and Internet of Things</b><br>12/3/2020</td><td> </td>
     </tr>
+    <tr><td style="text-align:right"><i>Tasks:</i></td><td> </td></tr>
+    <tr><td><b>Performance and Security</b><br>12/10/2020</td><td> </td>
+    </tr>
+    <tr><td style="text-align:right"><i>Tasks:</i></td><td>
+    <a href="/project/#milestone-4-final-report">Milestone 4: Final Report</a> - 12/14
+    </td></tr>
 </table>
 
 </div>

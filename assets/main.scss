@@ -215,3 +215,7 @@ ul.contact-list a {
   color:$grey-color;
   font-weight:200;
 }
+
+table tr:nth-child(even) td {
+    border-bottom-color: #aaa;
+  }
