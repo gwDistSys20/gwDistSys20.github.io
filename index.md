@@ -142,10 +142,10 @@ All deadlines are 11:59PM Eastern Time
     </thead>
     <tr><td style="width:20%"><b>Cloud Computing</b><br>11/19/2020</td><td> </td>
     </tr>
-    <tr><td style="text-align:right"><i>Tasks:</i></td><td> </td></tr>
+    <tr><td style="text-align:right"><i>Tasks:</i></td><td>Work on your project! </td></tr>
     <tr><td><b>Grid Computing and Internet of Things</b><br>12/3/2020</td><td> </td>
     </tr>
-    <tr><td style="text-align:right"><i>Tasks:</i></td><td> </td></tr>
+    <tr><td style="text-align:right"><i>Tasks:</i></td><td>Work on your project! </td></tr>
     <tr><td><b>Performance and Security</b><br>12/10/2020</td><td> </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td><td>
