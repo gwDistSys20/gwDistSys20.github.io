@@ -4,10 +4,13 @@ title: "HW 3: Leader Election"
 permalink: /hw3/
 ---
 
-> Deadline: Thursday 12/10/2020 - far in the future, but you will be busy with your Final Project, so start soon!
+> Deadline: Thursday 12/10/2020 
 >
 > GitHub Repo Setup: [https://classroom.github.com/g/iWrPYTjH](https://classroom.github.com/g/iWrPYTjH)
-> This assignment must be completed in **groups of 1-4 students**. You are encouraged to solve it with your Final Project group, but that is not required.
+>
+> This assignment must be completed **individually**. You may discuss the concepts of the project with other students *but you may **not** share any code!*.
+>
+> This assignment is a **bonus** assignment. You will get a grade out of 20 points which will then be added as a bonus to your grade from HW2.
 
 In this project you will implement a Leader Election algorithm in Go. Your algorithm must be based on the protocol defined in the Raft Consensus system, which is able to handle crash failures of leaders and other nodes in the system.  Raft's leader election is based on the Bully Algorithm covered in class, and uses the idea of terms and randomized timers to trigger elections. The [Raft paper](raft-extended.pdf) gives a detailed explanation of its algorithms, although you only really need to understand the Election portion. Hint: Figure 2 is very helpful, but you will need to separate out the parts about creating log entries (which we don't care about) vs heartbeats and elections (which you must implement).
 
@@ -108,13 +111,13 @@ Push your finalized code to github when you finish and:
   1. Make sure your code doesn't have any extraneous outputs and matches the requirements above. Remember to remove any intermediate files and the compiled binary file. You can modify [.gitignore](https://git-scm.com/docs/gitignore) file to intentionally ignore these files. Your repository will be graded in part on its cleanliness. 
   2. Commit and Push your code, check the github interface to be sure it is there
   3. (**IMPORTANT**) Go to the Issues page of your repository and create a new issue titled `Raft Submission` with the following information:
-  * Your team name and members
+  * Your name
   * If any aspects of your code are incomplete or not working, you should explain which parts have a problem.
   * Then tag the graders in the issue using their github usernames (`@HuadongHu and @freebyron`).
 
-**Important:** As with all assignments, it is an academic integrity violation to share your code with other students or to get a solution (full or partial) from another source. Since teams may be submitting their code at different times, it is extra important to keep your code to yourself!
+**Important:** As with all assignments, it is an academic integrity violation to share your code with other students or to get a solution (full or partial) from another source. Since students may be submitting their code at different times, it is extra important to keep your code to yourself!
 
 
-**Late Policy:** Late submissions will lose 5 points (out of 100) per 24 hour period after the deadline (i.e., submitting one hour late is -5, submitting 25 hours late is -10, etc). If you make any commits to your repository after the deadline, the submission will be considered late unless you have already coordinated this with the instructors.
+**Late Policy:** This assignment cannot be submitted late.
 
 > **Acknowledgments:** This assignment is adapted from the MIT 6.824 Distributed Systems course, which was developed by Robert Morris, Frans Kaashoek, and Nickolai Zeldovich.
