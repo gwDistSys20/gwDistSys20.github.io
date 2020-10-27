@@ -118,17 +118,17 @@ All deadlines are 11:59PM Eastern Time
     <tr><td style="text-align:right"><i>Tasks:</i></td>
     <td><a href="/readings.pdf">Readings in Chapter 6</a> </td>
     </tr>
-    <tr><td><b>Replication</b><br>10/29/2020</td>
+    <tr><td><b>Fault Tolerance</b><br>10/29/2020</td>
     <td> </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td>
-    <td><a href="/readings.pdf">Readings in Chapter 7</a> -- <a href="/project/#milestone-2-literature-review">Milestone 2: Literature Review</a> - 10/29</td>
+    <td><a href="/readings.pdf">Readings in Chapter 8</a> -- <a href="/project/#milestone-2-literature-review">Milestone 2: Literature Review</a> - 10/29</td>
     </tr>
-    <tr><td><b>Fault Tolerance</b><br>11/5/2020</td>
+    <tr><td><b>Replication</b><br>11/5/2020</td>
     <td> </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td>
-    <td><a href="/readings.pdf">Readings in Chapter 8</a> -- <a href="/project/#milestone-3-design-document">Milestone 3: Design Document</a> - 11/5</td>
+    <td><a href="/readings.pdf">Readings in Chapter 7</a> -- <a href="/project/#milestone-3-design-document">Milestone 3: Design Document</a> - 11/5</td>
     </tr>
     <tr><td><b>Midterm Exam</b><br>11/12/2020</td>
     <td>Practice problems will be provided </td>
