@@ -105,7 +105,7 @@ All deadlines are 11:59PM Eastern Time
     <tr><td style="width:20%"><b>Clocks and Timing</b>
     <br>10/15/2020
     </td><td>
-    <a href="/slides/7-coordination-notes.pdf">Lecture Slides</a> and <a href="https://blackboard.gwu.edu/webapps/collab-ultra/tool/collabultra?course_id=_342915_1&amp;mode=cpview">Video</a>
+    <a href="/slides/7-coordination-notes.pdf">Lecture Slides</a> and <a href="https://blackboard.gwu.edu/webapps/collab-ultra/tool/collabultra?course_id=_342915_1&amp;mode=cpview">Video</a> -- <a href="/clock-worksheet.pdf">Clock Worksheet</a> and <a href="https://youtu.be/IAI712Kk-O8">Solution Video</a>
     </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td>

@@ -16,7 +16,7 @@ You have about two months to complete the project so it should be more significa
   - [Milestone 0: Form a Team](#milestone-0-form-a-team) - 10/12 
   - [Milestone 1: Select a Topic](#milestone-1-select-a-topic) - 10/19 (10 points)
   - [Milestone 2: Literature Survey](#milestone-2-literature-review) - 10/29 (40 points)
-  - Milestone 3: Design Document - 11/5 (50 points)
+  - [Milestone 3: Design Document](#milestone-3-design-document) - 11/5 (50 points)
   - Milestone 4: Final Presentation - 12/14 (100 points)
 
 ---
@@ -128,3 +128,33 @@ For Milestone 2 you must perform a Literature Review which *summarizes and synth
  - Save your document as `milestone-2/literature.pdf` and create an issue with a link to the document assigned to the professors when you are ready to submit. While not required, we suggest storing copies of all the related articles you surveyed into your repository.
 
 The output of this report will be the fundamental basis of the next Milestone. For your next Design report, you need to make a decision about the solution you will develop for your problem according to the pros and cons of the studies cited in your literature review. Your solution can be chosen among the cited studies or it can be a combination of them, or you might propose your own solution and method to address the issues in your problem space. But the important point is that your proposed method should be based on an understanding of what others have done in the field. For the Literature Review Milestone you only need to give a basic outline of your plan, which you will then fully develop in Milestone 3.
+
+---
+
+## Milestone 3: Design Document
+
+> Note these details are still being finalized, but this will give you enough information to get started.
+
+The design document should be composed of sections as follows:
+
+#### Abstract
+Start with a very brief introduction to the problem you are trying to solve, followed by a high level overview of your proposed project. You may be able to partially reuse some text from your Milestone 2 Introduction and Project Proposal sections for this purpose, but this section should be only 1-2 paragraphs long.
+
+#### Project Design 
+This section should describe the key components and algorithms that will make up your project. Describe your architecture and how the different components will interact. Where possible, you should use the terms and design patterns that we have discussed in class, such as in Lecture 4 - Distributed Architectures. You also should specifically mention how your design allows the system to handle some of the core distributed systems challenges: Heterogeneity, Openness, Security, Failure Handling, Concurrency, Quality of Service, Scalability, and Transparency.
+
+When describing your components and how they communicate with each other, you must include several diagrams as described below to illustrate your design. Not including figures, this section should be 2-4 pages long. You do not need to go into too much detail about what each component will do, but you give enough information that we will be confident you know how to proceed with your implementation.
+
+
+#### Design Diagrams 
+(Details coming soon)
+
+#### Project Schedule
+The final section of the report must include your plan for completing the project by the end of the semester. We suggest breaking down your project into a series of prototypes, from the simplest possible demo up to your complete system. Each new prototype should add more functionality or complexity to your system. Finally, you should include some kind of evaluation plan describing how you intend to test the system’s correctness and performance. Be realistic; there is not too much time and we will expect you to complete what you propose on schedule.
+
+You must include a timeline for when you will complete each of your prototypes, ideally in the form of a Gantt chart or similar. The work breakdown should also specify which team member will be responsible for each component or feature.
+
+#### Format and Submission
+Your report should be approximately 3-6 pages long. You should follow the same formatting template instructions given for the Milestone 2 report.
+
+Save your document as `milestone-3/design.pdf`, then create an issue with a link to the document and assign it to the professors when you are ready to submit. We suggest storing copies of your design diagrams and the source files used to generate the PDF (i.e., the word or latex files) in the repository too.
