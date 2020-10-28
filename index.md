@@ -113,7 +113,7 @@ All deadlines are 11:59PM Eastern Time
     </tr>
     <tr><td><b>Distributed Coordination</b>
     <br>10/22/2020
-    </td><td><a href="/slides/8-coordination.pdf">Lecture Slides</a> and <a href="https://blackboard.gwu.edu/webapps/collab-ultra/tool/collabultra?course_id=_342915_1&amp;mode=cpview">Video</a></td>
+    </td><td><a href="/slides/8-consensus.pdf">Lecture Slides</a> and <a href="https://blackboard.gwu.edu/webapps/collab-ultra/tool/collabultra?course_id=_342915_1&amp;mode=cpview">Video</a></td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td>
     <td><a href="/readings.pdf">Readings in Chapter 6</a> </td>
