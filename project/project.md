@@ -57,7 +57,7 @@ We will not permit two groups to work on the same project idea. Precedence will 
   - Create an issue with title `Milestone 1 - TEAM NAME` and the body should have a link to your report file.
   - Click the button on the top right side of the Issue view to *Assign* the issue to both professors
 
-### Sample Project Ideas - Research Focused
+#### Sample Project Ideas - Research Focused
 
 *Linux CPU Scheduling*: Modify the Linux CPU scheduler and evaluate how your changes affect the performance of different types of applications. For example, you could reproduce the code from *[Fewer Cores, More Hertz (Usenix ATC 20)](https://www.usenix.org/conference/atc20/presentation/gouicern)* which proposed techniques for adjusting the scheduler to perform better when the CPU performs dynamic frequency scaling.
  - Similar ideas: VM CPU scheduling on a hypervisor like Xen; Dynamic resource allocation for containers using cgroups; etc
@@ -76,7 +76,7 @@ We will not permit two groups to work on the same project idea. Precedence will 
 *P2P Simulation*: Implement a simulator that mimics the behavior of a large P2P system such as bittorrent, gnutella, or bitcoin. Evaluate different algorithms for finding content or sending data in the network.
 
 
-### Sample Project Ideas - Implementation Focused
+#### Sample Project Ideas - Implementation Focused
 These project ideas focus on implementing a simplified version of a distributed system "from scratch". Designing and building a full system like this is a lot of work, so you will need to limit your scope to a specific set of distributed systems problems.
 
 *Distributed Database from Scratch*: Implement a basic distributed database. You should not spend a lot of effort on the database query engine (perhaps you can just reuse something simple like SQLite) and instead should focus on challenges such as supporting consistency and fault tolerance.
@@ -87,7 +87,7 @@ These project ideas focus on implementing a simplified version of a distributed 
 *RPC from Scratch*: Implement your own RPC library. Your version of RPC could explore interesting distributed systems challenges like fault tolerance or scalability. For example, your RPC library could automatically load balance calls across several servers, or detect a server failure and reissue a request to a backup replica.
 
 
-### Bad Project Ideas
+#### Bad Project Ideas
 Projects like the following will not be approved:
 
   - Building a web application that combines several cloud services (e.g., a meeting room reservation system). This is a distributed system, but we want you to focus on the underlying concepts, not an application.
