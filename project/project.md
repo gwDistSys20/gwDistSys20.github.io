@@ -16,7 +16,7 @@ You have about two months to complete the project so it should be more significa
   - [Milestone 0: Form a Team](#milestone-0-form-a-team) - 10/12 
   - [Milestone 1: Select a Topic](#milestone-1-select-a-topic) - 10/19 (10 points)
   - [Milestone 2: Literature Survey](#milestone-2-literature-review) - 10/29 (40 points)
-  - [Milestone 3: Design Document](#milestone-3-design-document) - 11/5 (50 points)
+  - [Milestone 3: Design Document](#milestone-3-design-document) - 11/8 (50 points)
   - Milestone 4: Final Presentation - 12/14 (100 points)
 
 ---
