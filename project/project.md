@@ -133,7 +133,7 @@ The output of this report will be the fundamental basis of the next Milestone. F
 
 ## Milestone 3: Design Document
 
-> Note these details are still being finalized, but this will give you enough information to get started.
+> The deadline has been extended until 11:59PM Sunday November 8th.
 
 The design document should be composed of sections as follows:
 

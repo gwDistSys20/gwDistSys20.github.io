@@ -128,7 +128,7 @@ All deadlines are 11:59PM Eastern Time
     <td> </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td>
-    <td><a href="/readings.pdf">Readings in Chapter 7</a> -- <a href="/project/#milestone-3-design-document">Milestone 3: Design Document</a> - 11/5</td>
+    <td><a href="/readings.pdf">Readings in Chapter 7</a> -- <a href="/project/#milestone-3-design-document">Milestone 3: Design Document</a> - 11/8 (extended)</td>
     </tr>
     <tr><td><b>Midterm Exam</b><br>11/12/2020</td>
     <td><a href="exam/sample-exam.pdf">Practice problems</a></td>
