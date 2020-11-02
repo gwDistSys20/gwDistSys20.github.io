@@ -147,7 +147,27 @@ When describing your components and how they communicate with each other, you mu
 
 
 #### Design Diagrams 
-(Details coming soon)
+There are many ways to show and explain the structure of your system. One of the best tools, to trace your architecture and algorithms, is UML diagrams. These diagrams enable the designers to explain their mindset and thoughts, to the developers, and also the QAs can execute test scenarios and test cases to find the possible flaws.
+
+Since we would like to follow a standard strategy to produce a distributed system, we are going to use UML diagrams to illustrate the system's components and interactions. One of your diagrams *must be a Use Case style diagram* to show the overview of your system functionality and different functions in your system. According to the nature and characteristics of the project, you are free to choose *two or more* additional diagrams among all UML types. For example, your Use Case diagram might show the overall system, then you can use the Deployment and Component diagrams to show the software and hardware components of your system. A Communication diagram also can illustrate the connections between the components, Sequence diagram explains the sequence of actions, events, and processes between the components, objects, and actors in your system. You can also use Activity and State diagrams to explain more detail about a process or object in your system. We expect to see at least 2 or 3 diagrams in level 0 and 1 to illustrate a proper overview of your system. 
+
+We have made you [two examples to illustrate a small part of a hypothetical system](project-uml.pdf) to understand how can we use these diagrams to design our system. Moreover, we had an example of a sequence diagram for a small multi-threading system in the slides of the Thread-Process lecture.
+
+Also please check the following articles to have a better understanding of UML diagrams and also modeling distributed systems with UML.
+Please notice that you might see different annotations of UML in different resources but we strongly encourage you to check the https://www.uml-diagrams.org/ annotations, definitions, and examples.
+
+  - https://www.uml-diagrams.org/
+  - https://link.springer.com/chapter/10.1007%2F3-540-40011-7_13
+  - https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.102.2388&rep=rep1&type=pdf
+  - https://www.researchgate.net/profile/Dimosthenis_Anagnostopoulos/publication/220923234_Using_UML_to_Model_Distributed_System_Architectures/links/54d8bbad0cf25013d03ee68d/Using-UML-to-Model-Distributed-System-Architectures.pdf
+  - http://agilemodeling.com/artifacts/componentDiagram.htm
+  - https://www.sciencedirect.com/topics/computer-science/deployment-diagram
+  - https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-communication-diagram/
+  - https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-sequence-diagram/
+  - https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-state-machine-diagram/
+
+
+
 
 #### Project Schedule
 The final section of the report must include your plan for completing the project by the end of the semester. We suggest breaking down your project into a series of prototypes, from the simplest possible demo up to your complete system. Each new prototype should add more functionality or complexity to your system. Finally, you should include some kind of evaluation plan describing how you intend to test the system’s correctness and performance. Be realistic; there is not too much time and we will expect you to complete what you propose on schedule.
