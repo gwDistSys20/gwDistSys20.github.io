@@ -125,7 +125,7 @@ All deadlines are 11:59PM Eastern Time
     <td><a href="/readings.pdf">Readings in Chapter 8</a> -- <a href="/project/#milestone-2-literature-review">Milestone 2: Literature Review</a> - 10/29</td>
     </tr>
     <tr><td><b>Replication</b><br>11/5/2020</td>
-    <td> </td>
+    <td><a href="/slides/10-consistency-notes.pdf">Lecture Slides</a> and <a href="https://blackboard.gwu.edu/webapps/collab-ultra/tool/collabultra?course_id=_342915_1&amp;mode=cpview">Video</a> -- <a href="slides/10-consistency-problems.pdf">Consistency Problems Worksheet</a> </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td>
     <td><a href="/readings.pdf">Readings in Chapter 7</a> -- <a href="/project/#milestone-3-design-document">Milestone 3: Design Document</a> - 11/8 (extended)</td>
