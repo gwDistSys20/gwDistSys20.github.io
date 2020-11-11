@@ -30,6 +30,7 @@ layout: home
 
 
 ## Announcements ##
+- The exam will be online during class Thursday November 12
 - The [Final Project](/project/) Milestone 0-1 details have been announced.
 - If you have feedback for us, please [fill out this anonymous form!](https://forms.gle/veNaFvyrwggT2HZbA)
 - Check the [Syllabus](syllabus/) for more info.
@@ -140,13 +141,13 @@ All deadlines are 11:59PM Eastern Time
     <thead>
     <tr><th style="text-align:center" colspan="2">Part 3: Distributed Systems in Practice</th></tr>
     </thead>
-    <tr><td style="width:20%"><b>Cloud Computing</b><br>11/19/2020</td><td> </td>
+    <tr><td style="width:20%"><b>Performance and Security</b><br>11/19/2020</td><td> </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td><td>Work on your project! </td></tr>
-    <tr><td><b>Grid Computing and Internet of Things</b><br>12/3/2020</td><td> </td>
+    <tr><td><b>Cloud Computing</b><br>12/3/2020</td><td> </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td><td>Work on your project! </td></tr>
-    <tr><td><b>Performance and Security</b><br>12/10/2020</td><td> </td>
+    <tr><td><b>Grid Computing and Internet of Things</b><br>12/10/2020</td><td> </td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td><td>
     <a href="/project/#milestone-4-final-report">Milestone 4: Final Report</a> - 12/14 -- <a href="/hw3/">Bonus HW3: Leader Election</a> - 12/10
