@@ -187,8 +187,6 @@ Your report should be approximately 3-6 pages long. You should follow the same f
 
 ## Milestone 4: Final Report
 
-> The details in this section are being finalized and are subject to change until this message is removed!
-
 Your final project submission must include a ~15 minute video and a final report.
 
 ### Final Report
