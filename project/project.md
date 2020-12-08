@@ -17,7 +17,7 @@ You have about two months to complete the project so it should be more significa
   - [Milestone 1: Select a Topic](#milestone-1-select-a-topic) - 10/19 (10 points)
   - [Milestone 2: Literature Survey](#milestone-2-literature-review) - 10/29 (40 points)
   - [Milestone 3: Design Document](#milestone-3-design-document) - 11/8 (50 points)
-  - Milestone 4: Final Presentation - 12/14 (100 points)
+  - [Milestone 4: Final Presentation](#milestone-4-final-report) - 12/14 (100 points)
 
 ---
 
@@ -183,3 +183,49 @@ Your report should be approximately 3-6 pages long. You should follow the same f
   - We suggest storing copies of your design diagrams and the source files used to generate the PDF (i.e., the word or latex files) in the repository too
   - In consultation with the group members, the leader should prepare a [Phase Time Sheet](phase-n-time-sheet.xlsx) and save it as `milestone-2/phase-2-time-sheet.xlsx`
  - If any team members have concerns about how work is being divided up in the group or are experiencing problems with their partners, complete the [Partner Feedback form](https://forms.gle/qfy7M9PGvJKPxDyz6)
+
+
+## Milestone 4: Final Report
+
+> The details in this section are being finalized and are subject to change until this message is removed!
+
+Your final project submission must include a ~15 minute video and a final report.
+
+### Final Report
+Your final report will primarily be a combination of the reports you wrote previously. It should be a "stand alone" piece of writing, meaning that a reader should be able to understand your full project without needing to look at the other documents. You should use the following layout which re-uses your prior reports and adds two new sections:
+
+1. **Introduction**: Background on the problem and your proposed solution (Reports 1, 2, and 3)
+2. **Related Work**: Descriptions of key related systems or papers (Report 2)
+3. **Project Design**: Explaining and illustrate your overall project structure and design decisions (Report 3)
+4. **Distributed Systems Challenges** (partially new section): This should be an extended version of what you wrote in Reports 1 and 3. You must list *all* of our key Distributed Systems design challenges (Heterogeneity, Openness, Security, Failure Handling, Concurrency, Quality of Service, Scalability, and Transparency) and discuss how they relate to your project. Even if you have not solved one of the challenges, you should still explain how it relates to your project and what would need to be solved for a real system deployment.
+5. **Project Outcomes and Reflection** (new section): In this section you should describe the overall result of your project and reflect on your design decisions. You should include some sort of measurements to understand how it performs or works (ideally in comparison to another system). For example, you could measure the performance of your system in terms of throughput and latency. Finally you should discuss how well your design choices worked and what you think the potential of your ideas are. You should be honest about your results -- we don't really care how well your approach does, but we do want to see that you have thought about its potential benefits and drawbacks.
+
+### Final Video
+You should create a ~15 minute long video explaining your project and demoing how it works. The goal of your video is to "sell" your project to us and get us excited about what you have done. Your presentation should be understandable to anyone who has taken our distributed systems course.
+
+We suggest the following structure:
+
+1. Introduce your project and the problem that it solves.
+2. Briefly present related work/systems.
+3. Describe the key design choices of your system, with a discussion of how they relate to some of our distributed systems design challenges.
+4. Show us some (NOT all) of your code and explain how the code relates to your design. For example, pick one or two key components and show us the main functions, classes, or data structures.
+5. Demo a portion of your project running. You do not need to show every part of your project, just a key aspect. For example, if your project focuses on reliability, show what happens when you cause a crash.
+6. Discuss the overall impact of your design and present some evaluation of how well it works.
+7. Conclude your presentation with a summary of your project's key points.
+
+Note that this is a lot of content to cover in 15 minutes, so you will need to be brief and only focus on the main points. If your video is more than 20 minutes we may deduct points.
+
+The simplest way to create your video is to have your team members join a Zoom/Skype call and record as your present. While we expect your presentation to look good (i.e., using clearly readable, nicely structured slides), we do not expect you to do any fancy video editing.
+
+### Submission and Deadline
+
+Your final submission **must be made by December 22nd, 5PM**. However, we will award **1 extra bonus point** to your project for each day early that you submit, up to 8 points extra if you submit by the original deadline of December 14th 11:59PM.
+
+To submit, complete the following steps:
+  - All of your code and written reports should be in your GitHub Repository. The final report should be in the `milestone-4/` folder.
+  - Your video should be uploaded using [this form](https://gwu.app.box.com/f/fdea26b01a164cf8af0843f886173d93). You **should not** include your video in your github repository since it is a large file.
+  - In consultation with the group members, the leader should prepare a final [Phase Time Sheet](phase-n-time-sheet.xlsx) and save it as `milestone-4/phase-4-time-sheet.xlsx`
+  - If any team members have concerns about how work is being divided up in the group or are experiencing problems with their partners, complete the [Partner Feedback form](https://forms.gle/qfy7M9PGvJKPxDyz6). Ideally you should do this as early as possible!
+  - When the above steps are complete, create an issue in your repository and **Assign** it to both of the instructors to notify them that you are ready for grading. Include a link to your final report in your issue.
+
+After that, have a great break and a successful future building distributed systems! We hope you have enjoyed the semester and learned a lot!
