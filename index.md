@@ -149,7 +149,8 @@ All deadlines are 11:59PM Eastern Time
     <td><a href="/slides/12-cloudapps.pdf">Lecture Slides</a> and <a href="https://blackboard.gwu.edu/webapps/collab-ultra/tool/collabultra?course_id=_342915_1&amp;mode=cpview">Video</a></td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td><td>Work on your project! </td></tr>
-    <tr><td><b>Internet of Things and Big Data</b><br>12/10/2020</td><td> </td>
+    <tr><td><b>Internet of Things and Big Data</b><br>12/10/2020</td>
+            <td><a href="/slides/13-big-data-iot-ml.pdf">Lecture Slides</a> and <a href="https://blackboard.gwu.edu/webapps/collab-ultra/tool/collabultra?course_id=_342915_1&amp;mode=cpview">Video</a></td>
     </tr>
     <tr><td style="text-align:right"><i>Tasks:</i></td><td>
     <a href="/project/#milestone-4-final-report">Milestone 4: Final Report</a> - 12/14 -- <a href="/hw3/">Bonus HW3: Leader Election</a> - 12/10
